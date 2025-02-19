@@ -1,0 +1,128 @@
+
+/* CSS */
+.banner1-section{
+    padding: 2.5rem 2rem;
+    width: 100%; /* or a specific width */
+    background-image: url('../Assets/IMG12.png');
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+
+  
+.banner1-container {
+    display: flex;
+    background: none;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 5%;
+    gap: 0.8rem;
+  }
+  
+  .social-icon img {
+    width: 1.2rem;
+    /* height: 2rem; */
+  }
+  
+  .vertical-divider {
+    width: 0.1rem;
+    height: 100px;
+    background: linear-gradient(180deg, #ff7d16, transparent);
+  }
+  
+  .content-section {
+    /* max-width: 600px; */
+    flex: 0 0 45%;
+    text-align: left;
+  }
+  
+  .subheading {
+    color: var(--color-orange-54, #ff7d16);
+    text-align: left;
+    font-family: 'PlusJakartaSans-Regular', sans-serif;
+    font-size: var(--width-64, 4rem);
+    line-height: var(--width-64, 4rem);
+    font-weight: var(--font-weight-400, 400);
+    position: relative;
+    align-self: stretch;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+  }
+  
+  .main-heading {
+    color: var(--color-orange-84, #e9dbc5);
+    font-family: 'PlusJakartaSans-SemiBold', sans-serif;
+    font-size: var(--font-size-subheading, 3.5rem);
+    line-height: var(--line-height-subheading,7.5rem);
+    font-weight: var(--font-weight-600, 600);
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  
+  .horizontal-divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #242122, transparent);
+  }
+  
+  .description {
+    color: #b4b4b4;
+  }
+  
+  .learn-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(42.22deg, #f73232, #ff7d16);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-container {
+    background: #242122;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    flex: 0 0 25%;
+  }
+  
+  .form-title {
+    background: linear-gradient(42.22deg, #f73232, #ff7d16);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+  }
+  
+  .input-field {
+    background: #1e1b1b;
+    padding:0.7rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    color: #fff;
+    opacity: 0.5;
+    text-align: left;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(42.22deg, #f73232, #ff7d16);
+    padding:0.6rem 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
