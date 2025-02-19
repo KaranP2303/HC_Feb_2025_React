@@ -27,14 +27,14 @@ const Banner1 = () => {
             Anyone Can Learn
           </h1>
 
-          <h2 className="main-heading">Cyber Security with Hackers Crowd</h2>
+          <h2 className="main-heading">cyber security with Hackers Crowd</h2>
           <div className="horizontal-divider"></div>
           <p className="description">
             Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
           <button className="learn-more-btn">
-            <img src={LearnSvg} alt="Learn More" />
             <span>Learn More</span>
+            <img src={LearnSvg} alt="Learn More" />
           </button>
         </div>
         <div className="form-container">

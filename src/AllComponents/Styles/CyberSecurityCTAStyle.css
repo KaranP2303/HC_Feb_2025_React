@@ -1,0 +1,104 @@
+
+  .cta-container {
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    /* height: 29.25rem; */
+    /* max-width: 120rem; */
+    position: relative;
+    background-image: url('../Assets/CyberSecurityCTA.svg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  .cta-text {
+    color:#e9dbc5;
+    text-align: left;
+    font-family: "PlusJakartaSans-SemiBold", sans-serif;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+    justify-content: flex-start;
+  }
+  
+  .cta-button {
+    background:rgba(255, 255, 255, 0);
+    border-radius: 0.625rem;
+    padding: 1.2rem 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: -0.0625rem 0.6875rem 1.625rem 0.25rem rgba(255, 103, 0, 0.32);;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .cta-button span {
+    color: #e9dbc5;
+    text-align: center;
+    font-family: "PlusJakartaSans-SemiBold", sans-serif;
+    font-size: 1rem;
+    line-height: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .cta-button:hover {
+    box-shadow: -0.0625rem 0.6875rem 2rem 0.5rem rgba(255, 103, 0, 0.32);
+    background: linear-gradient(42.22deg, #f73232, #ff7d16);
+    color: white;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .cta-container {
+      padding: 4rem 8rem;
+    }
+    .cta-text {
+      font-size: 4rem;
+      line-height: 5rem;
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cta-container {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 3rem;
+    }
+    .cta-text {
+      font-size: 3rem;
+      line-height: 4rem;
+      width: 100%;
+      justify-content: center;
+    }
+    .cta-button {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cta-container {
+      padding: 2rem;
+    }
+    .cta-text {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    .cta-button {
+      padding: 1rem 1.5rem;
+    }
+  }
+  
