@@ -21,15 +21,15 @@ const Banner1 = () => {
           ))}
           <div className="vertical-divider"></div>
         </div>
-        <div className="content-section">
+        <div className="banner1-content-section">
           {/* <h2 className="subheading">Anyone Can Learn</h2> */}
-          <h1 className='subheading'>
+          <h1 className='banner1-subheading'>
             Anyone Can Learn
           </h1>
 
-          <h2 className="main-heading">cyber security with Hackers Crowd</h2>
-          <div className="horizontal-divider"></div>
-          <p className="description">
+          <h2 className="banner1-main-heading">cyber security with Hackers Crowd</h2>
+          <div className="banner1-horizontal-divider"></div>
+          <p className="banner1-description">
             Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
           <button className="learn-more-btn">

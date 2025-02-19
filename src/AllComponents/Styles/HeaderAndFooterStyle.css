@@ -37,21 +37,17 @@
     align-items: center;
   }
   
-  /* .login {
-    background: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1rem;
-    border: 2px solid; 
-    border-image: linear-gradient(
-        57.93deg,
-        rgba(247, 50, 50, 1) 0%,
-        rgba(255, 125, 22, 1) 100%
-    ); 
-    border-image-slice: 1;
-  } */
-
   .login {
+    color: white; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid rgba(255, 125, 22, 1); /* Orange border */
+    padding: 0.5rem 1rem; /* Add some padding */
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.7rem; /* Optional: Rounded corners */
+}
+
+  /* .login {
     background: none;
     color: white;
     cursor: pointer;
@@ -66,7 +62,7 @@
         rgba(255, 125, 22, 1) 100%
     ) 1;
 }
-  
+   */
   .join {
     background: linear-gradient(57.93deg, rgba(247, 50, 50, 1) 0%, rgba(255, 125, 22, 1) 100%);
     color: white;
@@ -75,6 +71,7 @@
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-size: 1rem;
   }
   
   .join:hover {
@@ -143,13 +140,13 @@
     justify-content: flex-start;
     /* width: 100%; */
     background: #242122;
-    padding: 1rem 15%;
+    padding: 1rem 13%;
   }
   
   .background2 {
     width: 100%;
     max-width: 120rem;
-    padding: 4rem 5%;
+    padding: 3rem 5%;
   }
   
   .frame-48 {
@@ -170,7 +167,7 @@
   }
   
   .logo {
-    width: 6rem;
+    width: 4.5rem;
     height: auto;
   }
   
@@ -196,6 +193,17 @@
   .footer-section {
     flex: 1;
     /* min-width: 250px; */
+    align-items: center;
+  }
+  .footer-lists-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 8px; /* Adjust spacing between icon and text */
+  }
+
+  .footer-tick-svg{
+    padding: auto;
+    width: 1rem;
   }
   
   h4 {
@@ -206,6 +214,7 @@
   p,
   li {
     color: #ccc;
+    align-items: center;
   }
   
   ul {
@@ -240,7 +249,7 @@
   
   .background3 {
     width: 100%;
-    padding: 1rem;
+    padding:0rem 1rem;
     text-align: center;
     /* background: #1a1919; */
   }
@@ -248,6 +257,21 @@
   .horizontal-border p {
     color: #ccc;
   }
+
+.footer-horizontal-divider {
+  width: 50.875rem;
+  height: 0.125rem;
+  background: linear-gradient(90deg, rgba(77, 29, 45, 0) 0%, /* Fully transparent at start */ rgb(77, 29, 45) 20%, /* Solid color in the middle */ rgb(77, 29, 45) 80%, /* Solid color continues */ rgba(77, 29, 45, 0) 100% /* Fully transparent at end */);
+  margin: 0;
+}
+
+.footer-horizontal-divider1 {
+  width: 50.875rem;
+  height: 0.125rem;
+  background: linear-gradient(90deg, rgba(77, 29, 45, 0) 0%, /* Fully transparent at start */
+   rgb(48, 52, 53) 20%, /* Solid color in the middle */ rgb(124, 121, 122) 80%, /* Solid color continues */ rgba(77, 29, 45, 0) 100% /* Fully transparent at end */);
+  margin: 0;
+}
   
   /* Responsive Design */
   /* @media (max-width: 1024px) {

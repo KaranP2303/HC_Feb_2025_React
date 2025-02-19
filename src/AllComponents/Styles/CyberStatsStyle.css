@@ -4,7 +4,7 @@
     display: flex;
     align-items: stretch;  /* Ensures both cards stretch to the same height */
     justify-content: space-between;
-    gap: 2rem; /* Adds spacing between cards */
+    gap: 5rem; /* Adds spacing between cards */
 }
 
 /* Card Styles */
@@ -27,6 +27,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.large-text{
+    font-size: 4rem;
+}
+.cyber-stats-description{
+    font-size: 2rem;
 }
 
 /* Secondary Card */
@@ -36,8 +45,17 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    align-items: flex-start;
+    display: flex;
+    align-items: flex-start;   /* Aligns content to the top */
+    justify-content: flex-start; /* Aligns content to the left */
+    padding: 1.75rem;
+    text-align: left;
 }
-
+.small-text{
+    width: 50%;
+    font-size: 2rem;
+}
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .cyber-stats-container {
@@ -51,3 +69,46 @@
         min-height: 20rem;
     }
 }
+
+
+
+/* numers  */
+
+.stats-container {
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    width: 100%;
+
+}
+.number {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #161414;
+    text-shadow:
+                -2px -2px 0 rgb(129, 65, 5),  
+                 2px -2px 0 rgb(112, 32, 18),
+                -2px  2px 0 rgb(71, 39, 9),
+                 2px  2px 0 rgb(77, 29, 45);
+    width: 100%;
+
+}
+
+.label {
+    color: #e9dbc5;
+    font-family: "PlusJakartaSans-Medium", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.44rem;
+    width: 100%;
+
+}
+

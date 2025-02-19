@@ -9,15 +9,19 @@ import MovingBanner from './AllComponents/HomePageContents/Movingbanner'
 import Testimonials from './AllComponents/HomePageContents/Testimonials';
 import CyberSecurityCTA from './AllComponents/HomePageContents/CyberSecurityCTA';
 import CyberStats from './AllComponents/HomePageContents/CyberStats';
+import CyberSecurityLessons from './AllComponents/HomePageContents/CyberSecurityLessons';
+import Banner2 from './AllComponents/HomePageContents/Banner2';
 
 function App() {
   return (
     <div className="App">
+      <Banner2/>
       <Header logo={HC_logo} />
       <main >
         <Banner1 />
         <MovingBanner/>
         <Training />
+        <CyberSecurityLessons />
         <CyberStats />
         <CyberSecurityCTA/>
         <Testimonials />
