@@ -27,7 +27,8 @@
   .title {
     color: #e9dbc5;
     text-align: left;
-    font-size: 2.1rem;
+    font-size: clamp(0.1rem,2.6vw,20rem);
+    /* font-size: 2.1rem; */
     font-weight: 700;
     margin: 0;
   }
@@ -47,7 +48,8 @@
   
   .description {
     color: #c9c9c9;
-    font-size: 1rem;
+    font-size: clamp(0.1rem,1.14vw,20rem);
+    /* font-size: 1rem; */
     line-height: 1.75rem;
     text-align: left;
     margin: 0%;
@@ -59,7 +61,8 @@
     background: transparent;
     color: #e9dbc5;
     border: none;
-    font-size: 1rem;
+    font-size: clamp(0.1rem,1.2vw,20rem);
+    /* font-size: 1rem; */
     font-weight: 600;
     cursor: pointer;
     padding: 0.75rem 1.5rem;
@@ -74,23 +77,26 @@
   
 
    .frame-33 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center; /* Aligns items vertically */
+    width: 100%;
   }
   
   .heading {
     width: 100%;
     max-width: 18rem;
-    height: 26rem;
-    display: flex;
+    aspect-ratio: 3/4;
+    /* height: 26rem; */
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    /* padding:0rem 1.625rem; */
+    justify-content: flex-end; */
     border-radius: 0.75rem;
-    flex-grow: 1;
-    overflow: hidden;
+    /* flex-grow: 1;
+    overflow: hidden; */
   }
   
   .heading-image {
@@ -101,18 +107,40 @@
     background-repeat: no-repeat;
   }
   
-  /* .heading-text {
-    position: absolute;
-    bottom: 1.625rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #e9dbc5;
-    font-size: 1.75rem;
-    font-weight: 600;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6); 
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    z-index: 10;
-  } */
-  
+
+  /* Responsive Design */
+@media (max-width: 1024px) {
+  .cta-container, .frame-34 {
+      padding: 4rem 6rem;
+  }
+  .cta-text, .title {
+      font-size: 3rem;
+      line-height: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-container, .frame-34 {
+      padding: 3rem 4rem;
+  }
+  .cta-text, .title {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+  }
+  .cta-button, .load-more {
+      padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-container, .frame-34 {
+      padding: 2rem;
+  }
+  .cta-text, .title {
+      font-size: 2rem;
+      line-height: 2.8rem;
+  }
+  .cta-button, .load-more {
+      padding: 0.8rem 1.5rem;
+  }
+}

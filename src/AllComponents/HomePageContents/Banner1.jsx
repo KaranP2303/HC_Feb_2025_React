@@ -39,9 +39,14 @@ const Banner1 = () => {
         </div>
         <div className="form-container">
           <h3 className="form-title">Free Consultation</h3>
-          {inputFields.map((field, index) => (
+          {/* {inputFields.map((field, index) => (
             <div className="input-field" key={index}>{field}</div>
-          ))}
+          ))} */}
+          <input className="input-field" placeholder='Full Name' type="text" />
+          <input className="input-field" type="text" placeholder='Email' />
+          <input className="input-field" type="text" placeholder='Phone No.'/>
+          <input className="input-field" type="text" placeholder='URL' />
+          <input className="input-field" type="text" placeholder='Company Name'/>
           <button className="submit-btn">Get Consultations</button>
         </div>
       </div>

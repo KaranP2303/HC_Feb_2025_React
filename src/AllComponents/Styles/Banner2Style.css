@@ -25,15 +25,18 @@
 /* Icons */
 .vector,
 .vector2 {
-  flex-shrink: 0;
-  width: 1.2rem;
-  height: 1rem;
+    width: clamp(0.1rem,1.1vw,20rem);
+    height: auto;
+    flex-shrink: 0;
+  /* width: 1.2rem;
+  height: 1rem; */
   position: relative;
 }
 
 .vector2 {
-  width: 1.17rem;
-  height: 1.17rem;
+    width: clamp(0.1rem,1.3vw,20rem);
+    /* width: 1.17rem;
+  height: 1.17rem; */
 }
 
 /* Text Styles */
@@ -51,7 +54,8 @@
 
 .support-hackerscrowd-com {
   font-family: "NunitoSans-Regular", sans-serif;
-  font-size: 1rem;
+    font-size: clamp(0.1rem,1.1vw,20rem);
+    /* font-size: 1rem; */
   letter-spacing: 0.02em;
   font-weight: 400;
   text-transform: lowercase;
@@ -60,7 +64,8 @@
 .call-us,
 .contact-us {
   font-family: "NunitoSans-Bold", sans-serif;
-  font-size: 1.125rem;
+    font-size: clamp(0.1rem,1.1vw,20rem);
+    /* font-size: 1.125rem; */
   font-weight: 700;
 }
 
@@ -78,4 +83,36 @@
   width: 0.625rem;
   height: 0.3125rem;
   position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .top-bar {
+    padding: 0.3125rem 5rem;
+  }
+  .frame-10 {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 2rem;
+  }
+  .mail, .frame-10 {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 0.5rem 1rem;
+  }
+  .support-hackerscrowd-com, .call-us, .contact-us {
+    font-size: 0.9rem;
+  }
 }

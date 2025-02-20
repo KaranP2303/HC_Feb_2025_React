@@ -20,22 +20,22 @@ const CyberStats = () => {
       {/* stats numbers */}
 
 
-      <div class="stats-container">
-        <div class="stat">
-          <div class="number">10k+</div>
-          <div class="label">Satisfied Clients</div>
+      <div className="stats-container">
+        <div className="stat">
+          <div className="number">10k+</div>
+          <div className="label">Satisfied Clients</div>
         </div>
-        <div class="stat">
-          <div class="number">10+</div>
-          <div class="label">Years of Experience</div>
+        <div className="stat">
+          <div className="number">10+</div>
+          <div className="label">Years of Experience</div>
         </div>
-        <div class="stat">
-          <div class="number">30+</div>
-          <div class="label">Professional Teams</div>
+        <div className="stat">
+          <div className="number">30+</div>
+          <div className="label">Professional Teams</div>
         </div>
-        <div class="stat">
-          <div class="number">100+</div>
-          <div class="label">Projects Completed</div>
+        <div className="stat">
+          <div className="number">100+</div>
+          <div className="label">Projects Completed</div>
         </div>
       </div>
     </>
