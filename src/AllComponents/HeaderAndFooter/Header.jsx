@@ -44,7 +44,7 @@ const navLinks = [
 const Header = (props) => {
   return (
     <header className="header">
-      <img className="logo" src={props.logo} alt="HC Logo" />
+      <img className="header-logo" src={props.logo} alt="HC Logo" />
       
       <nav className="nav">
         {navLinks.map((link) => (
