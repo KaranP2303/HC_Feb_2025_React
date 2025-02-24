@@ -1,9 +1,7 @@
 /* Header.css */
 .header {
     padding: 0.8rem 13%;
-    /* background: linear-gradient(to left, #242122, #242122); */
-  background: #010101;
-  
+    background: linear-gradient(to left, #242122, #242122);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -12,7 +10,9 @@
   }
   
   .header-logo {
-    width: clamp(0.1rem,3.8vw,30rem);
+    /* width: 5.5rem;
+    height: 3.9rem; */
+    width: clamp(0.1rem,4vw,30rem);
     height: auto;
     object-fit: cover;
   }
@@ -46,7 +46,7 @@
   .login {
     color: white; /* Text color */
     background-color: transparent; /* Transparent background */
-    border: 2px solid  #57e7f5; /* Orange border */
+    border: 2px solid rgba(255, 125, 22, 1); /* Orange border */
     padding: 0.5rem 1rem; /* Add some padding */
     /* font-size: 1rem; */
     font-size: clamp(0.2rem,1vw,23rem);
@@ -55,8 +55,7 @@
 }
 
   .join {
-    /* background: linear-gradient(57.93deg, rgba(247, 50, 50, 1) 0%, rgba(255, 125, 22, 1) 100%); */
-    background: #57e7f5;
+    background: linear-gradient(57.93deg, rgba(247, 50, 50, 1) 0%, rgba(255, 125, 22, 1) 100%);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -68,12 +67,11 @@
   }
   
   .join:hover {
-    color:  #57e7f5;
-    background: transparent;
-    border: 2px solid  #57e7f5; 
+    color: rgba(255, 125, 22, 1);
+    background: wheat;
   }
   .login:hover{
-    background: #57e7f5;
+    background: linear-gradient(57.93deg, rgba(247, 50, 50, 1) 0%, rgba(255, 125, 22, 1) 100%);
   }
   /* Responsive Styles */
   /* @media (max-width: 1024px) {

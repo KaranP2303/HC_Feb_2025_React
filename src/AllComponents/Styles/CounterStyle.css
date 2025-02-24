@@ -1,0 +1,90 @@
+/* General Styling */
+.counters {
+    background: #121212;
+    padding: 2.25rem 6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Counter */
+  .counter {
+    padding: 1.2rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Number Styling */
+  .counter-value {
+    color: #ffffff;
+    font-family: "Poppins-Medium", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  /* Label Styling */
+  .counter-label {
+    color: #9c9c9c;
+    font-family: "Poppins-Medium", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  /* Divider Lines */
+  .divider {
+    width: 4.6875rem;
+    height: 0.0625rem;
+    background-color: #ffffff;
+    transform: rotate(90deg);
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 1024px) {
+    .counters {
+      flex-direction: column;
+      padding: 3rem 2rem;
+    }
+  
+    .divider {
+      width: 100%;
+      height: 0.0625rem;
+      transform: rotate(0deg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .counter {
+      width: 100%;
+      padding: 1.25rem 2rem;
+    }
+  
+    .counter-value {
+      font-size: 2rem;
+    }
+  
+    .counter-label {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .counters {
+      padding: 2rem 1rem;
+    }
+  
+    .counter-value {
+      font-size: 1.75rem;
+    }
+  
+    .counter-label {
+      font-size: 0.9rem;
+    }
+  }
+  

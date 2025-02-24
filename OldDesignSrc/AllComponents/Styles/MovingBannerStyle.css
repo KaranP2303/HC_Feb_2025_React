@@ -1,0 +1,31 @@
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .image-track {
+    display: flex;
+    width: calc(10.2rem * 12); /* Ensure enough space for smooth loop */
+    animation: scroll-left 35s linear infinite;
+  }
+  
+  .image-item {
+    /* width: 9.2rem; */
+    width: clamp(0.1rem,11.5vw,20rem);
+    /* height: 3.4rem; */
+    padding: 1rem 2.3rem;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
