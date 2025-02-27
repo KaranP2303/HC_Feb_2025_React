@@ -55,101 +55,6 @@ const testimonialsData = [
   },
 ];
 
-// export const Testimonials = () => {
-//   const [index, setIndex] = useState(0);
-
-//   const nextSlide = () => {
-//     if (index < testimonialsData.length - 2) setIndex(index + 1);
-//   };
-
-//   const prevSlide = () => {
-//     if (index > 0) setIndex(index - 1);
-//   };
-
-//   return (
-//     <div className="testimonial-container">
-//       <h2 className="testimonial-title">What Our Clients Say</h2>
-
-//       <div className="testimonial-wrapper">
-//         <div
-//           className="testimonial-slider"
-//           style={{ transform: `translateX(-${index * 50}%)` }}
-//         >
-//           {testimonialsData.map((testimonial) => (
-//             <div key={testimonial.id} className="testimonial-card">
-//               {/* Left Column - Image */}
-//               <div className="testimonial-image">
-//                 <img src={testimonial.image} alt={testimonial.name} />
-//               </div>
-
-//               {/* Right Column - Content */}
-//               <div className="testimonial-content">
-//                 <h3>{testimonial.name}</h3>
-//                 <p className="testimonial-role">{testimonial.role}</p>
-//                 <p className="testimonial-feedback">"{testimonial.feedback}"</p>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-
-//       <div className="testimonial-buttons">
-//           <img src={TestimonialLeftArrow} className='testimonial-slider-arrow' alt="prev button"  onClick={prevSlide} disabled={index === 0} />
-     
-//           <img src={TestimonialRightArrow} className='testimonial-slider-arrow' alt="next button" onClick={nextSlide} disabled={index >= testimonialsData.length - 2} />
-       
-//       </div>
-//     </div>
-//   );
-// };
-
-
-// export const Testimonials = () => {
-//   const [index, setIndex] = useState(0);
-
-//   const nextSlide = () => {
-//     if (index < testimonialsData.length - 2) setIndex(index + 1);
-//   };
-
-//   const prevSlide = () => {
-//     if (index > 0) setIndex(index - 1);
-//   };
-
-//   return (
-//     <div className="testimonials-container">
-//       <div className="testimonial-wrapper">
-//         <AnimatePresence mode="wait">
-//           {testimonialsData.slice(index, index + 2).map((testimonial, i) => (
-//             <motion.div
-//               key={testimonial.id}
-//               className="testimonial-card"
-//               initial={{ x: i === 0 ? "-100%" : "100%", opacity: 0 }}
-//               animate={{ x: "0%", opacity: 1 }}
-//               exit={{ x: i === 0 ? "-100%" : "100%", opacity: 0 }}
-//               transition={{ duration: 0.5 }}
-//             >
-//               <div className="testimonial-image">
-//                 <img src={testimonial.image} alt={testimonial.name} />
-//               </div>
-
-//               <div className="testimonial-content">
-//                 <h3>{testimonial.name}</h3>
-//                 <p className="testimonial-role">{testimonial.role}</p>
-//                 <p className="testimonial-feedback">"{testimonial.feedback}"</p>
-//               </div>
-//             </motion.div>
-//           ))}
-//         </AnimatePresence>
-//       </div>
-//       <div className="testimonials-control-buttons">
-//         <img src={TestimonialLeftArrow} className="testimonials-left-btn" alt="Testimonial Left Arrow" onClick={prevSlide} disabled={index === 0} />
-//         <img src={TestimonialRightArrow} className="testimonials-right-btn" alt="Testimonial Right Arrow" onClick={nextSlide} disabled={index >= testimonialsData.length - 2}/>
-//       </div>
-//     </div>
-//   );
-// };
-
-
 export  const Testimonials=()=> {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1); // 1 for next, -1 for prev
@@ -169,7 +74,7 @@ export  const Testimonials=()=> {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto text-center">
+    <div className="testimonial-section">
       <div className="testimonial-title">
           Testimonials
         {/* <h3>Testimonials</h3> */}

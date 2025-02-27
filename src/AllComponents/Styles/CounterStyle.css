@@ -1,22 +1,20 @@
 /* General Styling */
 .counters {
     background: #121212;
-    padding: 2rem 12rem;
+    padding: clamp(0.5rem, 1vw, 20rem) 0rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: clamp(0.5rem, 1.3vw, 20rem);
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* max-width: 1920px; */
   }
   
   /* Individual Counter */
   .counter {
-    /* padding: 1.2rem ; */
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
+    gap: clamp(0.5rem, 1vw, 20rem);
     align-items: center;
     text-align: center;
   }
@@ -25,7 +23,7 @@
   .counter-value {
     color: #ffffff;
     font-family: "Poppins-Medium", sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(0.2rem,1.9vw,20rem);
     font-weight: 500;
     text-transform: uppercase;
   }
@@ -34,7 +32,7 @@
   .counter-label {
     color: #9c9c9c;
     font-family: "Poppins-Medium", sans-serif;
-    font-size: 1rem;
+    font-size: clamp(0.2rem,1.2vw,20rem);
     font-weight: 500;
   }
   

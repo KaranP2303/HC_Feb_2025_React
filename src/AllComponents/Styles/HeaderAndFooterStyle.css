@@ -84,7 +84,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: clamp(1.5rem, 3vw, 29.5rem);
+  /* gap: clamp(1.5rem, 3vw, 29.5rem); */
 }
 
 .footer-column {
@@ -95,8 +95,9 @@
 
 .footer-title {
   font-size: clamp(0.2rem, 1.4vw, 41rem);
-  font-weight: bold;
   text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-weight: 600;
 }
 
 .footer-links {
@@ -111,6 +112,9 @@
   font-size: clamp(0.1rem, 1.19vw, 41rem);
   cursor: pointer;
   transition: color 0.3s;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-weight: 400;
 }
 
 .footer-link:hover {
@@ -122,6 +126,16 @@
   padding-top: clamp(1rem, 3vw, 1.5rem);
   border-top: 1px solid #444;
   font-size: clamp(0.875rem, 2vw, 1rem);
+}
+.copyrights-text{
+  margin: 0;
+  color: var(--white-1, #ffffff);
+  text-align: center;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: clamp(0.4rem,1.2vw,20rem);
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
 }
 
 /* Responsive Styles */

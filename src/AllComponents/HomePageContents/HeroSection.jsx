@@ -1,33 +1,3 @@
-// import '../Styles/HeroSectionStyle.css';
-// import BgVideo from '../Assets/HeroSectionBG.mp4'
-// import React from "react";
-
-// const HeroSection = () => {
-//   return (
-//     <div className="hero-section">
-//       <video autoPlay loop muted playsInline className="hero-video">
-//         <source src={BgVideo} type="video/mp4" />
-//         Your browser does not support the video tag.
-//       </video>
-//       <div className="frame">
-//         <div className="title">
-//           Think Like a Hacker, <br /> Defend Like a Pro
-//         </div>
-//         <p className="subtitle">
-//           <span className="text-normal">
-//             Learn, Hack, Secure - Build Your Future in CyberSecurity with
-//           </span>{" "}
-//           <span className="text-bold">Hackers Crowd</span>
-//         </p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default HeroSection;
-
-
-
 import '../Styles/HeroSectionStyle.css';
 import BgVideo from '../Assets/HeroSectionBG.mp4';
 import React from "react";
@@ -44,16 +14,6 @@ const HeroSection = () => {
       </div>
       <div className="hero-section-frame">
         <div className="title">
-          {/* Think Like a Hacker, <br /> Defend Like a Pro */}
-          {/* <Typewriter
-            options={{
-              strings: ["Think Like a Hacker, <br/> Defend Like a Pro"],
-              autoStart: true,
-              loop: true,
-              delay: 230,
-              deleteSpeed: 30,
-            }}
-          /> */}
           <Typewriter
           options={{
             strings: [

@@ -59,7 +59,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright © 2023-24 WebTech | All Rights Reserved</p>
+        <p className='copyrights-text'>Copyright © 2023-24 WebTech | All Rights Reserved</p>
       </div>
     </div>
   );

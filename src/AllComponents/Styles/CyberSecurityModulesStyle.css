@@ -92,6 +92,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    background: rgb(72, 72, 72);
   }
   
   .cyber-box-text {
