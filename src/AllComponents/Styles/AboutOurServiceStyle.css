@@ -1,0 +1,185 @@
+/* .about-our-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #000 0%, #1e1e1e 100%);
+    padding: clamp(0.5rem, 1vh, 20rem) clamp(2rem, 5vw, 7rem);
+
+  }
+  
+  .text-wrapper {
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: clamp(1rem, 3.3vw, 40rem);
+    font-weight: 400;
+    text-align: center;
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.4) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding:clamp(1rem, 1vh, 20rem) clamp(0.5rem, 13vw, 20rem);
+    margin :0;
+  }
+  
+  .group {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    place-items: center; 
+  }
+  
+  .about-our-service-frame-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+  }
+  
+  .about-our-service-frame-title {
+    font-size: clamp(0.5rem, 1.5vw, 30rem);
+    color: #57e7f5;
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-weight: 600;
+    align-self: stretch;
+    text-align: right;
+  
+  }
+  
+  .about-our-service-frame-description {
+    font-size: clamp(0.5rem, 1vw, 20rem);
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0%;
+    text-align: right;
+  }
+  
+  .price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
+  
+  .price-label {
+    font-size: clamp(0.5rem, 1.2vw, 20rem);
+    color: #c5c5c5;
+  }
+  
+  .price {
+    font-size: clamp(0.5rem, 2vw, 25rem);
+    font-weight: bold;
+    color: white;
+  }
+  
+  .about-our-service .overlap-group {
+    left: 25%;
+    position: absolute;
+    top: 0;
+  }
+  
+  .image-container {
+     width: clamp(1rem,80%,1000rem);
+   padding:  clamp(10%,10rem,50rem) 0rem;
+    height: clamp(2rem, 40rem, max(999px));
+    background: url('../Assets//AboutOurServicesSvg.svg') no-repeat center/cover;
+    position: relative;
+  }
+  
+  .content-box {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+.about-our-service-frame-2 { 
+    top: 7%; 
+    left: 4%; 
+}
+  .about-our-service-frame-3 { top: 7%; right: 1%; }
+  .about-our-service-frame-4 { bottom: 23%; left: 7%; }
+  .about-our-service-frame-5 { bottom: 23%; right: 4%; }
+  
+
+  @media (min-width: 1800px) and (max-width: 2560px) {
+    .group{
+      min-height: clamp(2rem, 50rem, 100rem);
+    }
+  }
+  
+  @media (min-width: 2561px) {
+    .image-container {
+     height: clamp(2rem, 70rem, max(999px));
+    
+   }
+  } */
+
+  .about-our-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #000 0%, #1e1e1e 100%);
+    padding: clamp(0.5rem, 1vh, 20rem) clamp(2rem, 5vw, 7rem);
+
+  }
+  
+  .text-wrapper {
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: clamp(1rem, 3.3vw, 40rem);
+    font-weight: 400;
+    text-align: center;
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.4) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding:clamp(1rem, 1vh, 20rem) clamp(0.5rem, 13vw, 20rem);
+    margin :0;
+  }
+  
+  
+  .about-our-service-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .about-our-service-left-content-column,
+  .about-our-service-right-content-column {
+    flex: 1;
+    min-width: 300px;
+    height: 250px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .center-column {
+    flex: 1;
+    min-width: 300px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlapping-image {
+    position: absolute;
+    width: 150%; /* Ensures overlap into left and right columns */
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

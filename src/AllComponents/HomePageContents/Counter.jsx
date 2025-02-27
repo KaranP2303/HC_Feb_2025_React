@@ -22,7 +22,7 @@ const Counters = () => {
               <div className="counter-label">{item.label}</div>
             </div>
           </div>
-          {index !== counterData.length - 1 && <div className="divider"></div>}
+          {index !== counterData.length - 1 && <div className="counter-divider"></div>}
         </React.Fragment>
       ))}
     </div>

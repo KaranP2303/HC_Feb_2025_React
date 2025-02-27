@@ -1,18 +1,19 @@
 /* General Styling */
 .counters {
     background: #121212;
-    padding: 2.25rem 6rem;
+    padding: 2rem 12rem;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    /* max-width: 1920px; */
   }
   
   /* Individual Counter */
   .counter {
-    padding: 1.2rem ;
+    /* padding: 1.2rem ; */
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
@@ -24,7 +25,7 @@
   .counter-value {
     color: #ffffff;
     font-family: "Poppins-Medium", sans-serif;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-transform: uppercase;
   }
@@ -33,12 +34,12 @@
   .counter-label {
     color: #9c9c9c;
     font-family: "Poppins-Medium", sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 500;
   }
   
   /* Divider Lines */
-  .divider {
+  .counter-divider {
     width: 4.6875rem;
     height: 0.0625rem;
     background-color: #ffffff;

@@ -1,0 +1,254 @@
+/* .about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #000, #1e1e1e);
+  gap: 64px;
+  justify-content: center;
+  padding: 2rem 6rem;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 14rem;
+  position: relative;
+  align-items: stretch;
+  padding: 0rem 3rem ;
+  justify-content: space-between;
+}
+
+.about-us-frame{
+  flex: 0 0 40%;
+  align-content: center;
+}
+.frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.heading {
+  color: #fff;
+  font-size: clamp(1rem, 1.5vw, 20rem);
+  margin: 0;
+}
+
+.sub-heading {
+  color: #fff;
+  font-size: clamp(1rem, 3.8vw, 20rem);
+  margin: 0;
+
+}
+
+.description {
+  color: #fff;
+  font-size: clamp(0.5rem, 1.04vw, 20rem);
+  margin: 0.2rem 0rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  padding:1.5rem 2rem;
+  flex: 0 0 30%;
+}
+.form-heading{
+  margin: 0;
+  font-size: clamp(1rem,2vw,20rem);
+  text-align: center;
+  margin: 0.5rem 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #fff;
+  font-size: clamp(0.5rem,0.98vw,3rem);
+}
+
+.input, .textarea {
+  border: none;
+  border-bottom: 1px solid #009dff;
+  background: transparent;
+  color: #fff;
+  padding: 0.5rem 0rem;
+  font-size: clamp(0.5rem,1.4vw,30rem);
+}
+
+.submit-button {
+  background-color: #57e7f5;
+  color: #1d1d1d;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  width: max-content;
+  align-self: center;
+}
+
+.illustration {
+  width: clamp(1rem,22%,30rem);
+  position: absolute;
+  top: clamp(-2rem, -5vw, -5%);  
+  left: clamp(20%, 39.5vw, 90%);    
+  transform: translateX(-50%);
+} */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #000, #1e1e1e);
+  gap: 64px;
+  justify-content: center;
+  padding: 2rem 6rem;
+  /* max-width: 1920px; */
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 14rem;
+  position: relative;
+  align-items: stretch;
+  padding: 0rem 3rem;
+  justify-content: space-between;
+}
+
+.about-us-frame {
+  flex: 0 0 40%;
+  align-content: center;
+}
+
+.frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.heading {
+  color: #fff;
+  font-size: clamp(1rem, 1.5vw, 20rem);
+  margin: 0;
+}
+
+.sub-heading {
+  color: #fff;
+  font-size: clamp(1rem, 3.8vw, 20rem);
+  margin: 0;
+}
+
+.description {
+  color: #fff;
+  font-size: clamp(0.5rem, 1.04vw, 20rem);
+  margin: 0.2rem 0rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  flex: 0 0 30%;
+}
+
+.form-heading {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 20rem);
+  text-align: center;
+  margin: 0.5rem 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #fff;
+  font-size: clamp(0.5rem, 0.98vw, 3rem);
+}
+
+.input, .textarea {
+  border: none;
+  border-bottom: 1px solid #009dff;
+  background: transparent;
+  color: #fff;
+  padding: 0.5rem 0rem;
+  font-size: clamp(0.5rem, 1.4vw, 30rem);
+}
+
+.submit-button {
+  background-color: #57e7f5;
+  color: #1d1d1d;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  width: max-content;
+  align-self: center;
+}
+
+.illustration {
+  width: clamp(1rem, 22%, 30rem);
+  position: absolute;
+  top: clamp(-2rem, -5vw, -5%);
+  left: clamp(20%, 39.5vw, 90%);
+  transform: translateX(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .banner {
+    gap: 6rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding: 2rem;
+  }
+  .banner {
+    padding: 1rem;
+    gap: 3rem;
+  }
+  .form {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .heading, .sub-heading {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .form {
+    width: 100%;
+    padding: 1rem;
+  }
+}

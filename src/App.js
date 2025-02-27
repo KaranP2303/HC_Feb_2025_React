@@ -1,19 +1,17 @@
 
-import Footer from './AllComponents/HeaderAndFooter/Footer';
+
 import Header from './AllComponents/HeaderAndFooter/Header';
 import './App.css';
 import HC_logo from './AllComponents/Assets/HC_LOGO.svg';
-// import Banner1 from './AllComponents/HomePageContents/Banner1';
-import Training from './AllComponents/HomePageContents/Training';
-import MovingBanner from './AllComponents/HomePageContents/Movingbanner'
-import Testimonials from './AllComponents/HomePageContents/Testimonials';
-import CyberSecurityCTA from './AllComponents/HomePageContents/CyberSecurityCTA';
-import CyberStats from './AllComponents/HomePageContents/CyberStats';
-import CyberSecurityLessons from './AllComponents/HomePageContents/CyberSecurityLessons';
 import Banner2 from './AllComponents/HomePageContents/Banner2';
 import HeroSection from './AllComponents/HomePageContents/HeroSection';
-import AboutUs from './AllComponents/HomePageContents/AboutUs';
 import Counters from './AllComponents/HomePageContents/Counter';
+import { ContactForm } from './AllComponents/HomePageContents/ContactForm';
+import { Footer } from './AllComponents/HeaderAndFooter/Footer';
+import { AboutOurService } from './AllComponents/HomePageContents/AboutOurService';
+import { WhyHCAcademy } from './AllComponents/HomePageContents/WhyHcAcademy';
+import { Testimonials } from './AllComponents/HomePageContents/Testimonial';
+import { CyberSecurityModules } from './AllComponents/HomePageContents/CyberSecurityModule';
 
 function App() {
   return (
@@ -21,18 +19,15 @@ function App() {
       <Banner2/>
       <Header logo={HC_logo} />
       <main >
-        {/* <Banner1 /> */}
         <HeroSection/>
+        <AboutOurService/>
         <Counters/>
-        {/* <AboutUs/> */}
-        {/* <MovingBanner/> */}
-        {/* <Training />
-        <CyberSecurityLessons />
-        <CyberStats />
-        <CyberSecurityCTA/>
-        <Testimonials /> */}
+        <WhyHCAcademy/>
+        <CyberSecurityModules/>
+        <Testimonials />
+        <ContactForm />
       </main>
-      <Footer logo={HC_logo}/>
+      <Footer/>
     </div>
   );
 }
