@@ -1,4 +1,5 @@
 import "../Styles/WhyHcAcademyStyle.css";
+import { FlippingBoxes } from "./FlipingBoxes";
 
 // const features = [
 //   {
@@ -44,7 +45,7 @@ export const WhyHCAcademy = () => {
           Out From The Competition.
         </p>
       </div>
-
+      <FlippingBoxes />
       
     </div>
   );

@@ -5,22 +5,22 @@ import ContactUsRobotSvg from '../Assets/ContactUsRobotSvg.svg'
 
 export const ContactForm = () => {
   return (
-    <div className="about-us"> 
+    <div className="contact-form"> 
       <div className="banner">
-        <div className="about-us-frame">
+        <div className="contact-form-frame">
           <div className="frame-wrapper">
             <div className="content">
               <h2 className="heading">Get in Touch with Us</h2>
-              <h1 className="sub-heading">Have questions? Let’s connect!</h1>
+              <h1 className="sub-heading">Have questions? <br /> Let’s connect!</h1>
               <p className="description">
-                We’d love to hear from you! Reach out with your questions, and our team will respond soon.
+                We’d love to hear from you! Reach out with your questions, and <br /> our team will respond soon.
               </p>
             </div>
           </div>
         </div>
 
         <form className="form">
-          <h3 className="form-heading">Get early access to our Academy</h3>
+          <h3 className="form-heading">Get early access to <br /> our Academy</h3>
 
           <div className="input-group">
             <label className="label">Full Name</label>

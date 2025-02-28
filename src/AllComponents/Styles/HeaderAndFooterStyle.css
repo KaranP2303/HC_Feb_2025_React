@@ -76,7 +76,7 @@
 .footer {
   background: radial-gradient(50% 50% at 50% 50%, rgb(30, 30, 30) 0%, rgb(18, 18, 18) 100%);
   color: white;
-  padding: clamp(2rem, 4vw, 5rem) clamp(4rem, 8vw, 10rem);
+  padding: clamp(2rem, 4vw, 150rem) clamp(4rem, 7vw, 100rem);
   text-align: center;
 }
 
@@ -122,10 +122,10 @@
 }
 
 .footer-bottom {
-  margin-top: clamp(2rem, 5vw, 3rem);
-  padding-top: clamp(1rem, 3vw, 1.5rem);
-  border-top: 1px solid #444;
-  font-size: clamp(0.875rem, 2vw, 1rem);
+  margin-top: clamp(2rem, 2vw, 50rem);
+  padding-top: clamp(1rem, 3vw, 50rem);
+  border-top: clamp(0.01rem, 0.1vw, 30rem) solid rgba(255, 255, 255, 0.2);
+  font-size: clamp(0.875rem, 2vw, 30rem);
 }
 .copyrights-text{
   margin: 0;

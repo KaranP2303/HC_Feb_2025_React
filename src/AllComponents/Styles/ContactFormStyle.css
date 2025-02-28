@@ -1,25 +1,17 @@
-.about-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact-form {
   background: linear-gradient(180deg, #000, #1e1e1e);
-  gap: 64px;
-  justify-content: center;
-  padding: 2rem 6rem;
-  /* max-width: 1920px; */
+  padding: clamp(0.5rem, 7vw, 40rem) clamp(0.5rem, 3vw, 40rem);
 }
 
 .banner {
   display: flex;
   align-items: center;
-  gap: 14rem;
   position: relative;
   align-items: stretch;
-  padding: 0rem 3rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.about-us-frame {
+.contact-form-frame {
   flex: 0 0 40%;
   align-content: center;
 }
@@ -27,82 +19,112 @@
 .frame-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 40px;
 }
 
 .heading {
   color: #fff;
-  font-size: clamp(1rem, 1.5vw, 20rem);
+  font-size: clamp(1rem, 1.5vw, 50rem);
   margin: 0;
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 400;
 }
 
 .sub-heading {
   color: #fff;
-  font-size: clamp(1rem, 3.8vw, 20rem);
+  font-size: clamp(1rem, 3.8vw, 50rem);
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 400;
   margin: 0;
+  line-height: 126%;
 }
 
 .description {
   color: #fff;
-  font-size: clamp(0.5rem, 1.04vw, 20rem);
+  font-size: clamp(0.5rem, 1.04vw, 50rem);
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 400;
   margin: 0.2rem 0rem;
+  line-height: 160%;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 0.5rem;
-  padding: 1.5rem 2rem;
+  border-radius: 3%;
   flex: 0 0 30%;
+  padding: clamp(0.4rem,2vw,30rem) clamp(0.4rem,1.5vw,30rem);
 }
 
 .form-heading {
   margin: 0;
-  font-size: clamp(1rem, 2vw, 20rem);
+  font-size: clamp(1rem, 1.5vw, 50rem);
   text-align: center;
-  margin: 0.5rem 1.5rem;
+  font-family: "PlusJakartaSans-Medium", sans-serif;
+  line-height: 130%;
+  font-weight: 500;
 }
 
 .input-group {
   display: flex;
   flex-direction: column;
+  padding: clamp(0.1rem,0.5vw,30rem) clamp(0.3rem,0.2vw,30rem);
 }
 
 .label {
   color: #fff;
-  font-size: clamp(0.5rem, 0.98vw, 3rem);
+  font-size: clamp(0.2rem, 1.1vw, 30rem);
+  font-family: "PlusJakartaSans-Medium", sans-serif;
+  line-height: 126%;
+  font-weight: 500;
 }
 
 .input, .textarea {
-  border: none;
-  border-bottom: 1px solid #009dff;
+  /* border: none; */
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border:0  1rem solid rgba(37, 36, 36, 0.1);
   background: transparent;
-  color: #fff;
-  padding: 0.5rem 0rem;
-  font-size: clamp(0.5rem, 1.4vw, 30rem);
+  color: rgba(255, 255, 255, 0.5);
+  padding: clamp(0.3rem,0.7vw,30rem) clamp(0.3rem,0.7vw,30rem);
+  font-size: clamp(0.5rem, 1.1vw, 30rem);
+  font-family: "PlusJakartaSans-Medium", sans-serif;
+  line-height: 133%;
+  font-weight: 500;
 }
 
 .submit-button {
   background-color: #57e7f5;
   color: #1d1d1d;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.6rem;
+  padding: clamp(0.1rem,0.76vw,30rem) clamp(0.3rem,1.2vw,30rem);
+  border-radius: 4%;
   cursor: pointer;
-  width: max-content;
   align-self: center;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: clamp(0.3rem,1.1vw,30rem);
+  font-weight: 500;
+  margin-top: clamp(0.3rem,0.7vw,30rem);
 }
 
-.illustration {
+/* .illustration {
   width: clamp(1rem, 22%, 30rem);
   position: absolute;
   top: clamp(-2rem, -5vw, -5%);
   left: clamp(20%, 39.5vw, 90%);
   transform: translateX(-50%);
+} */
+.illustration {
+  width: 20%; /* Relative to the parent div */
+  max-width: 300rem; /* Prevents excessive scaling */
+  min-width: 1rem; /* Ensures it doesn’t shrink too much */
+  position: absolute;
+  top: -13%; /* Keeps it consistently positioned */
+  left: 42%; /* Centers it relative to parent */
+  transform: translateX(-50%); /* Ensures centering */
 }
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -117,7 +139,7 @@
 }
 
 @media (max-width: 768px) {
-  .about-us {
+  .contact-form {
     padding: 2rem;
   }
   .banner {

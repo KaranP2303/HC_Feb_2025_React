@@ -97,7 +97,7 @@ export  const Testimonials=()=> {
 
               {/* Right Column - Content */}
               <div className="testimonial-content">
-                <h3>{testimonial.name}</h3>
+                <h3 className="testimonial-card-name">{testimonial.name}</h3>
                 <p className="testimonial-role">{testimonial.role}</p>
                 <p className="testimonial-feedback">"{testimonial.feedback}"</p>
               </div>

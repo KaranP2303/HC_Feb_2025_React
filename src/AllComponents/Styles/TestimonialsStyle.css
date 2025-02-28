@@ -3,6 +3,7 @@
   padding: clamp(0.2rem,1vw,20rem) clamp(0.2rem,6vw,20rem);
   margin-top: 2%;
   margin-bottom: 2%;
+  
 }
 
 .testimonial-title{
@@ -27,7 +28,8 @@
     justify-content: space-between;
     overflow: hidden;
     /* transition:0.5s ease-in-out; */
-  padding: 0rem clamp(0.2rem,8vw,20rem);
+  padding: 2% clamp(0.2rem,8vw,20rem);
+  
 }
   .max-w-3xl {
     max-width: 800px;
@@ -49,6 +51,8 @@
   .testimonials-control-buttons{
     display: flex;
     justify-content: center;
+    padding:clamp(0.5rem, 0.2vw, 30rem) clamp(0.5rem, 1vw, 30rem);
+    gap: 1%;
   }
 
   .testimonials-control-buttons .testimonials-right-btn {
@@ -59,6 +63,7 @@
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
+    width: clamp(0.1rem,3.5vw,30rem) ;
   }
   
   .testimonials-control-buttons .testimonials-right-btn:disabled {
@@ -74,6 +79,7 @@
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
+    width: clamp(0.1rem,3.5vw,30rem) ;
   }
   
   .testimonials-control-buttons .testimonials-left-btn:disabled {
@@ -95,7 +101,7 @@
     display: flex;
     align-items: center;
     width: 49%;
-    background: #434343;
+    background: transparent;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -124,22 +130,31 @@
     flex: 2;
     text-align: left;
     padding-left: 15px;
+    font-family: "Poppins-Light", sans-serif;
   }
   
-  .testimonial-content h3 {
-    font-size: 18px;
+  .testimonial-card-name {
+    font-size: clamp(0.1rem,1.5vw,30rem);
     margin-bottom: 5px;
+    margin: 0%;
+    font-weight: 500;
+    padding: clamp(0.1rem,0.5vw,30rem) 0%;
   }
   
   .testimonial-role {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
+    font-size: clamp(0.1rem,1.3vw,30rem);
+    color: #9c9c9c;
+    margin: 0%;
+    padding: clamp(0.1rem,0.5vw,30rem) 0%;
+    font-weight: 400;
   }
   
   .testimonial-feedback {
-    font-size: 14px;
+    font-size: clamp(0.1rem,1.15vw,30rem);
     font-style: italic;
     color: #e5e5e5;
+    margin: 0%;
+    font-weight: 300;
+    padding: clamp(0.1rem,0.5vw,30rem) 0%;
   }
   
