@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/HC_Feb_2025_React.git/static/css/main.e9318744.css",
-    "main.js": "/HC_Feb_2025_React.git/static/js/main.adaa118b.js",
-    "static/media/HeroSectionBG.mp4": "/HC_Feb_2025_React.git/static/media/HeroSectionBG.54d0b530f5a8b06f3f0b.mp4",
-    "static/media/ContactUsRobotSvg.svg": "/HC_Feb_2025_React.git/static/media/ContactUsRobotSvg.2ed1a6cd36ffd8132062d0291d977c2c.svg",
-    "static/media/HC_LOGO.svg": "/HC_Feb_2025_React.git/static/media/HC_LOGO.f1da100618bb5ed0dddc89787444124a.svg",
-    "static/media/GetCertifiedSvg.svg": "/HC_Feb_2025_React.git/static/media/GetCertifiedSvg.d66d6e298aa999018a92b1ede17c215a.svg",
-    "static/media/CallUsSvg.svg": "/HC_Feb_2025_React.git/static/media/CallUsSvg.3f6def1d355e952ad2383782de1fd441.svg",
-    "static/media/HighlyPracticleSvg.svg": "/HC_Feb_2025_React.git/static/media/HighlyPracticleSvg.1aa82588ab718e84f025b7190ea8b381.svg",
-    "static/media/GuidedCoursesSvg.svg": "/HC_Feb_2025_React.git/static/media/GuidedCoursesSvg.37c9c5663f01e9e0df79029e663b9075.svg",
-    "static/media/JobAndSkillSvg.svg": "/HC_Feb_2025_React.git/static/media/JobAndSkillSvg.430688097aa1b364f92872c728a8dd76.svg",
-    "static/media/UnlimitedAndOnlineSvg.svg": "/HC_Feb_2025_React.git/static/media/UnlimitedAndOnlineSvg.5145d6355e6efc2c835547c7d2686273.svg",
-    "index.html": "/HC_Feb_2025_React.git/index.html",
-    "static/media/EmailSvg.svg": "/HC_Feb_2025_React.git/static/media/EmailSvg.ae41e883b4cfebc963ef58a69744eaa9.svg",
-    "static/media/TestimonialLeftArrow.svg": "/HC_Feb_2025_React.git/static/media/TestimonialLeftArrow.a1e2d9b7ea2d86a17c1bdfd33ddb0be8.svg",
-    "static/media/TestimonialRightArrow.svg": "/HC_Feb_2025_React.git/static/media/TestimonialRightArrow.79e9b848c201b09ce5a0c80752d3d788.svg",
-    "static/media/PenTestingSvg.svg": "/HC_Feb_2025_React.git/static/media/PenTestingSvg.279f32600d70bf2c100c3084630e7ecc.svg",
-    "static/media/RightSideUpArrowSvvg.svg": "/HC_Feb_2025_React.git/static/media/RightSideUpArrowSvvg.46c4dbfb02d7adec091191aa059f9571.svg",
-    "static/media/rightSideArrowSvg.svg": "/HC_Feb_2025_React.git/static/media/rightSideArrowSvg.78ea076a37576720fbe7c4ad477eb55c.svg",
-    "main.e9318744.css.map": "/HC_Feb_2025_React.git/static/css/main.e9318744.css.map",
-    "main.adaa118b.js.map": "/HC_Feb_2025_React.git/static/js/main.adaa118b.js.map"
+    "main.css": "/HC_Feb_2025_React/static/css/main.e9318744.css",
+    "main.js": "/HC_Feb_2025_React/static/js/main.6d9dc210.js",
+    "static/media/HeroSectionBG.mp4": "/HC_Feb_2025_React/static/media/HeroSectionBG.54d0b530f5a8b06f3f0b.mp4",
+    "static/media/ContactUsRobotSvg.svg": "/HC_Feb_2025_React/static/media/ContactUsRobotSvg.2ed1a6cd36ffd8132062d0291d977c2c.svg",
+    "static/media/HC_LOGO.svg": "/HC_Feb_2025_React/static/media/HC_LOGO.f1da100618bb5ed0dddc89787444124a.svg",
+    "static/media/GetCertifiedSvg.svg": "/HC_Feb_2025_React/static/media/GetCertifiedSvg.d66d6e298aa999018a92b1ede17c215a.svg",
+    "static/media/CallUsSvg.svg": "/HC_Feb_2025_React/static/media/CallUsSvg.3f6def1d355e952ad2383782de1fd441.svg",
+    "static/media/HighlyPracticleSvg.svg": "/HC_Feb_2025_React/static/media/HighlyPracticleSvg.1aa82588ab718e84f025b7190ea8b381.svg",
+    "static/media/GuidedCoursesSvg.svg": "/HC_Feb_2025_React/static/media/GuidedCoursesSvg.37c9c5663f01e9e0df79029e663b9075.svg",
+    "static/media/JobAndSkillSvg.svg": "/HC_Feb_2025_React/static/media/JobAndSkillSvg.430688097aa1b364f92872c728a8dd76.svg",
+    "static/media/UnlimitedAndOnlineSvg.svg": "/HC_Feb_2025_React/static/media/UnlimitedAndOnlineSvg.5145d6355e6efc2c835547c7d2686273.svg",
+    "static/media/EmailSvg.svg": "/HC_Feb_2025_React/static/media/EmailSvg.ae41e883b4cfebc963ef58a69744eaa9.svg",
+    "index.html": "/HC_Feb_2025_React/index.html",
+    "static/media/TestimonialLeftArrow.svg": "/HC_Feb_2025_React/static/media/TestimonialLeftArrow.a1e2d9b7ea2d86a17c1bdfd33ddb0be8.svg",
+    "static/media/TestimonialRightArrow.svg": "/HC_Feb_2025_React/static/media/TestimonialRightArrow.79e9b848c201b09ce5a0c80752d3d788.svg",
+    "static/media/PenTestingSvg.svg": "/HC_Feb_2025_React/static/media/PenTestingSvg.279f32600d70bf2c100c3084630e7ecc.svg",
+    "static/media/RightSideUpArrowSvvg.svg": "/HC_Feb_2025_React/static/media/RightSideUpArrowSvvg.46c4dbfb02d7adec091191aa059f9571.svg",
+    "static/media/rightSideArrowSvg.svg": "/HC_Feb_2025_React/static/media/rightSideArrowSvg.78ea076a37576720fbe7c4ad477eb55c.svg",
+    "main.e9318744.css.map": "/HC_Feb_2025_React/static/css/main.e9318744.css.map",
+    "main.6d9dc210.js.map": "/HC_Feb_2025_React/static/js/main.6d9dc210.js.map"
   },
   "entrypoints": [
     "static/css/main.e9318744.css",
-    "static/js/main.adaa118b.js"
+    "static/js/main.6d9dc210.js"
   ]
 }
