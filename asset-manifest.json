@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HC_Feb_2025_React/static/css/main.e9318744.css",
-    "main.js": "/HC_Feb_2025_React/static/js/main.6d9dc210.js",
+    "main.css": "/HC_Feb_2025_React/static/css/main.0c80f00b.css",
+    "main.js": "/HC_Feb_2025_React/static/js/main.e8538a5f.js",
     "static/media/HeroSectionBG.mp4": "/HC_Feb_2025_React/static/media/HeroSectionBG.54d0b530f5a8b06f3f0b.mp4",
     "static/media/ContactUsRobotSvg.svg": "/HC_Feb_2025_React/static/media/ContactUsRobotSvg.2ed1a6cd36ffd8132062d0291d977c2c.svg",
     "static/media/HC_LOGO.svg": "/HC_Feb_2025_React/static/media/HC_LOGO.f1da100618bb5ed0dddc89787444124a.svg",
@@ -18,11 +18,11 @@
     "static/media/PenTestingSvg.svg": "/HC_Feb_2025_React/static/media/PenTestingSvg.279f32600d70bf2c100c3084630e7ecc.svg",
     "static/media/RightSideUpArrowSvvg.svg": "/HC_Feb_2025_React/static/media/RightSideUpArrowSvvg.46c4dbfb02d7adec091191aa059f9571.svg",
     "static/media/rightSideArrowSvg.svg": "/HC_Feb_2025_React/static/media/rightSideArrowSvg.78ea076a37576720fbe7c4ad477eb55c.svg",
-    "main.e9318744.css.map": "/HC_Feb_2025_React/static/css/main.e9318744.css.map",
-    "main.6d9dc210.js.map": "/HC_Feb_2025_React/static/js/main.6d9dc210.js.map"
+    "main.0c80f00b.css.map": "/HC_Feb_2025_React/static/css/main.0c80f00b.css.map",
+    "main.e8538a5f.js.map": "/HC_Feb_2025_React/static/js/main.e8538a5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9318744.css",
-    "static/js/main.6d9dc210.js"
+    "static/css/main.0c80f00b.css",
+    "static/js/main.e8538a5f.js"
   ]
 }
