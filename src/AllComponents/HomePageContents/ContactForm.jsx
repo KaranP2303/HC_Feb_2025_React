@@ -22,24 +22,24 @@ export const ContactForm = () => {
         <form className="form">
           <h3 className="form-heading">Get early access to <br /> our Academy</h3>
 
-          <div className="input-group">
+          <div className="contact-form-input-group">
             <label className="label">Full Name</label>
-            <input type="text" className="input" placeholder="Enter your name" />
+            <input type="text" className="contact-form-input" placeholder="Enter your name" />
           </div>
 
-          <div className="input-group">
+          <div className="contact-form-input-group">
             <label className="label">Phone No.</label>
-            <input type="tel" className="input" placeholder="Enter your phone number" />
+            <input type="tel" className="contact-form-input" placeholder="Enter your phone number" />
           </div>
 
-          <div className="input-group">
+          <div className="contact-form-input-group">
             <label className="label">Email Address</label>
-            <input type="email" className="input" placeholder="Enter your email" />
+            <input type="email" className="contact-form-input" placeholder="Enter your email" />
           </div>
 
-          <div className="input-group">
+          <div className="contact-form-input-group">
             <label className="label">Message</label>
-            <textarea className="textarea" placeholder="Type your message"></textarea>
+            <textarea className="contact-form-textarea" placeholder="Type your message"></textarea>
           </div>
 
           <button type="submit" className="submit-button">Submit</button>

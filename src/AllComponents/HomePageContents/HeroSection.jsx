@@ -1,20 +1,20 @@
 import '../Styles/HeroSectionStyle.css';
-import BgVideo from '../Assets/HeroSectionBG.mp4';
+import BgVideoTrimmed from '../Assets/HeroSectionBGTrimmed.mp4';
 import React from "react";
-import  Typewriter  from 'typewriter-effect';
 
 const HeroSection = () => {
   return (
     <div className="hero-section">
       <div className="video-container">
         <video autoPlay loop muted playsInline className="hero-video">
-          <source src={BgVideo} type="video/mp4" />
+          <source src={BgVideoTrimmed} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
       <div className="hero-section-frame">
         <div className="title">
-          <Typewriter
+           Think Like a Hacker,<br/>Defend Like a Pro
+          {/* <Typewriter
           options={{
             strings: [
               "Think Like a Hacker,<br/>Defend Like a Pro ...",
@@ -31,7 +31,7 @@ const HeroSection = () => {
               .deleteAll()
               .start();
           }}
-        />
+        /> */}
         </div>
         <p className="subtitle">
           <span className="text-normal">

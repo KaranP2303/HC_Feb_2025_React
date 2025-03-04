@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const splitTextIntoLines = (text, maxWordsPerLine = 4) => {
     if (text.includes("<br/>")) {
       return text.split("<br/>");
@@ -21,18 +22,83 @@ const splitTextIntoLines = (text, maxWordsPerLine = 4) => {
     return lines;
   };
 
+  // const AnimatedPath = ({ pathData, cx, cy }) => {
+  //   return (
+  //     <>
+  //       {/* Circle animation */}
+  //       <motion.circle
+  //         cx={cx}
+  //         cy={cy}
+  //         r="4"
+  //         fill="#57E7F5"
+  //         initial={{ opacity: 0 }}
+  //         animate={{ opacity: 1 }}
+  //         transition={{ duration: 0.5 , repeat: Infinity, repeatDelay: 1}}
+  //       />
+  
+  //       {/* Path animation */}
+  //       <motion.path
+  //         d={pathData}
+  //         stroke="#57E7F5"
+  //         strokeWidth="2"
+  //         fill="none"
+  //         initial={{ pathLength: 0 }}
+  //         animate={{ pathLength: 1 }}
+  //         transition={{ duration: 1,  repeat: Infinity, repeatDelay: 1 }}
+  //       />
+  //     </>
+  //   );
+  // };
+  
+
+  const AnimatedPath = ({ pathData, cx, cy }) => {
+    return (
+      <>
+        {/* Path animation first */}
+        <motion.path
+          d={pathData}
+          stroke="#57E7F5"
+          strokeWidth="2"
+          fill="none"
+          initial={{ pathLength: 0 }}
+          animate={{ pathLength: 1 }}
+          transition={{ duration: 1, repeat: Infinity, repeatDelay: 1 }}
+        />
+  
+        {/* Circle appears after path animation completes */}
+        <motion.circle
+          cx={cx}
+          cy={cy}
+          r="4"
+          fill="#57E7F5"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 1, repeat: Infinity, repeatDelay: 1 }}
+        />
+      </>
+    );
+  };
+  
 export const AboutOurServiceRobot = ( data ) => (
   <svg
     width="100%"
-    height="auto"
+    // height="auto"
     viewBox="0 0 1348 628"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
+    {/* <path
       d="M604.5 408.5L527.672 315C451.062 315 421.61 315 345 315"
       stroke="#57E7F5"
-    />
+    /> */}
+     {/* <AnimatedPath cx={343.5} cy={64} pathData="M563.5 93L502.381 64C427.837 64 418.544 64 344 64" />
+      <AnimatedPath cx={1046.5} cy={64} pathData="M827.5 93L888.619 64H1046.5" />
+      <AnimatedPath cx={343.5} cy={315} pathData="M604.5 408.5L527.672 315C451.062 315 421.61 315 345 315" />
+      <AnimatedPath cx={1050.5} cy={315} pathData="M800.5 403L874.328 315H1050" /> */}
+      <AnimatedPath cx={343.5} cy={64} pathData="M563.5 93L502.381 64C427.837 64 418.544 64 344 64" />
+      <AnimatedPath cx={1046.5} cy={64} pathData="M827.5 93L888.619 64H1046.5" />
+      <AnimatedPath cx={343.5} cy={315} pathData="M604.5 408.5L527.672 315C451.062 315 421.61 315 345 315" />
+      <AnimatedPath cx={1050.5} cy={315} pathData="M800.5 403L874.328 315H1050" />
     <rect
       x="450.5"
       y="495"
@@ -100,7 +166,7 @@ export const AboutOurServiceRobot = ( data ) => (
     <text x="290" y="425" fontSize="30" fontWeight="750"  fontFamily="Poppins-Bold,sans-serif" textAnchor="middle" fill="rgba(255, 255,255, 0.8)">
       {data.data.obj3[0].costValue}
     </text>
-    <path d="M827.5 93L888.619 64H1046.5" stroke="#57E7F5" />
+    {/* <path d="M827.5 93L888.619 64H1046.5" stroke="#57E7F5" />
     <path
       d="M563.5 93L502.381 64C427.837 64 418.544 64 344 64"
       stroke="#57E7F5"
@@ -109,7 +175,7 @@ export const AboutOurServiceRobot = ( data ) => (
     <circle cx="343.5" cy="64" r="4" fill="#57E7F5" />
     <circle cx="1046.5" cy="64" r="4" fill="#57E7F5" />
     <circle cx="1050.5" cy="315" r="4" fill="#57E7F5" />
-    <circle cx="343.5" cy="315" r="4" fill="#57E7F5" />
+    <circle cx="343.5" cy="315" r="4" fill="#57E7F5" /> */}
     <defs>
       <pattern
         id="pattern0_116_3030"

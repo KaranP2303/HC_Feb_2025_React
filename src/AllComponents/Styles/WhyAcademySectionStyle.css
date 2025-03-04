@@ -1,0 +1,98 @@
+.why-academy-section {
+    background: transparent;
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .why-academy-feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.4%;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .why-academy-feature-card {
+    background: transparent;
+    width: 100%;
+    height: clamp(1rem,14vw,300rem);
+    perspective: 1000px; /* Adds 3D perspective */
+    cursor: pointer;
+    border-radius: 1rem;
+    border-top: none;
+    border-bottom: 0.3rem solid rgba(125, 124, 124, 0.776);
+    border-right: 0.3rem solid rgba(125, 124, 124, 0.776);
+    border-left: 0.3rem solid rgba(125, 124, 124, 0.776);
+    overflow: hidden;
+  }
+  
+  .why-academy-feature-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .why-academy-feature-card:hover .why-academy-feature-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .why-academy-feature-card-front,
+  .why-academy-feature-card-back {
+    position: absolute;
+    backface-visibility: hidden; /* Hides the back face */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .why-academy-feature-card-front {
+
+    width: 100%;
+    height: 100%;
+    left: -4%;
+    top: -4%;
+  }
+  
+  .why-academy-feature-card-back {
+    background: linear-gradient(96.45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .why-academy-feature-icon {
+    width: clamp(0.2rem, 3vw, 20rem);
+  }
+  
+  .why-academy-feature-title {
+    padding-top: 1rem;
+    font-size: clamp(0.2rem, 1.6vw, 20rem);
+    font-weight: 500;
+    font-family: "Poppins-Medium", sans-serif;
+    margin: 0 0;
+  }
+  
+  .why-academy-feature-subtitle {
+    padding-top: 0.5rem;
+    font-size: clamp(0.2rem, 1.1vw, 20rem);
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 400;
+    margin: 0 0;
+  }
+  
+  .why-academy-feature-description {
+    color: #1d1d1d;
+    font-size: clamp(0.2rem, 1.1vw, 20rem);
+    line-height: 1.5;
+  }

@@ -1,160 +1,124 @@
-   /* Container for the entire section */
-.testimonial-section{
-  padding: clamp(0.2rem,1vw,20rem) clamp(0.2rem,6vw,20rem);
-  margin-top: 2%;
-  margin-bottom: 2%;
+.controll-buttons{
+    padding: 2% 2%;
+    display: flex;
+    justify-content: space-around;
+  }
   
-}
-
-.testimonial-title{
-    background: linear-gradient(
-    96.45deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .slider-container {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
     text-align: center;
-    font-family: "Poppins-SemiBold", sans-serif;
-    font-size: clamp(1rem,3vw,30rem);
-    font-weight: 600;
     position: relative;
-    padding: 2rem 2rem;
-}
+  }
   
-.testimonial-slider-container{
+  .slider-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .slider-wrapper {
     display: flex;
-    justify-content: space-between;
     overflow: hidden;
-    /* transition:0.5s ease-in-out; */
-  padding: 2% clamp(0.2rem,8vw,20rem);
-  
-}
-  .max-w-3xl {
-    max-width: 800px;
-  }
-  
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  /* Button styles */
-   .flex {
-    display: flex;
-  }
-  .testimonials-control-buttons{
-    display: flex;
+    scroll-behavior: smooth;
     justify-content: center;
-    padding:clamp(0.5rem, 0.2vw, 30rem) clamp(0.5rem, 1vw, 30rem);
-    gap: 1%;
-  }
-
-  .testimonials-control-buttons .testimonials-right-btn {
-    padding: 0.8rem 0.5rem;
-    border: none;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-    width: clamp(0.1rem,3.5vw,30rem) ;
   }
   
-  .testimonials-control-buttons .testimonials-right-btn:disabled {
-    background: gray;
-    cursor: not-allowed;
-  }
-
-  .testimonials-control-buttons .testimonials-left-btn {
-    padding: 0.8rem 0.5rem;
-    border: none;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-    width: clamp(0.1rem,3.5vw,30rem) ;
-  }
-  
-  .testimonials-control-buttons .testimonials-left-btn:disabled {
-    background: gray;
-    cursor: not-allowed;
-  }
-  
-  /* Wrapper for testimonials */
-  .overflow-hidden {
-    overflow: hidden;
-  }
-  
-  .relative {
-    position: relative;
-  }
-  
-  /* Testimonial Card */
-  .testimonial-card {
+  .card {
     display: flex;
-    align-items: center;
-    width: 49%;
-    background: transparent;
+    flex: 0 0 40%;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0 0.5%;
-    transition: 0.5s ease-in-out;
+    margin: 10px;
+    background-color: rgb(48, 48, 48);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Image section */
-  .testimonial-image {
+  .card-image {
     flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   
-  .testimonial-image img {
-    /* width: 80px;
-    height: 80px; */
-    width: clamp(1rem,8vw,30rem);
-    border-radius: 5%;
-    object-fit: cover;
+  .card-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
   }
   
-  /* Content section */
-  .testimonial-content {
+  .card-content {
     flex: 2;
     text-align: left;
-    padding-left: 15px;
-    font-family: "Poppins-Light", sans-serif;
   }
   
-  .testimonial-card-name {
-    font-size: clamp(0.1rem,1.5vw,30rem);
-    margin-bottom: 5px;
-    margin: 0%;
-    font-weight: 500;
-    padding: clamp(0.1rem,0.5vw,30rem) 0%;
+  .card-content h3 {
+    margin: 0;
+    font-size: 18px;
   }
   
-  .testimonial-role {
-    font-size: clamp(0.1rem,1.3vw,30rem);
-    color: #9c9c9c;
-    margin: 0%;
-    padding: clamp(0.1rem,0.5vw,30rem) 0%;
-    font-weight: 400;
+  .card-role {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
   }
   
-  .testimonial-feedback {
-    font-size: clamp(0.1rem,1.15vw,30rem);
-    font-style: italic;
-    color: #e5e5e5;
-    margin: 0%;
-    font-weight: 300;
-    padding: clamp(0.1rem,0.5vw,30rem) 0%;
+  .card-feedback {
+    font-size: 14px;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  .dots-container {
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #333;
+    border-radius: 50%;
+  }
+  
+  .dot.active {
+    background-color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .card-image {
+      margin-bottom: 10px;
+    }
+  
+    .prev-button,
+    .next-button {
+      padding: 8px;
+    }
   }
   

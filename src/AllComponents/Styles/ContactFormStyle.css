@@ -65,7 +65,7 @@
   font-weight: 500;
 }
 
-.input-group {
+.contact-form-input-group {
   display: flex;
   flex-direction: column;
   padding: clamp(0.1rem,0.5vw,30rem) clamp(0.3rem,0.2vw,30rem);
@@ -79,12 +79,11 @@
   font-weight: 500;
 }
 
-.input, .textarea {
-  /* border: none; */
+.contact-form-input, .contact-form-textarea {
   border-top: none;
   border-right: none;
   border-left: none;
-  border:0  1rem solid rgba(37, 36, 36, 0.1);
+  border-bottom:0.1rem solid rgba(152, 151, 151, 0.1);
   background: transparent;
   color: rgba(255, 255, 255, 0.5);
   padding: clamp(0.3rem,0.7vw,30rem) clamp(0.3rem,0.7vw,30rem);
@@ -92,6 +91,16 @@
   font-family: "PlusJakartaSans-Medium", sans-serif;
   line-height: 133%;
   font-weight: 500;
+}
+.contact-form-input:focus, .contact-form-textarea:focus, select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.contact-form-input:not(:placeholder-shown) {
+  border-bottom: 0.15vw solid #57e7f5 !important;
+}
+.contact-form-textarea:not(:placeholder-shown) {
+  border-bottom: 0.15vw solid #57e7f5 !important;
 }
 
 .submit-button {
@@ -107,22 +116,19 @@
   font-weight: 500;
   margin-top: clamp(0.3rem,0.7vw,30rem);
 }
-
-/* .illustration {
-  width: clamp(1rem, 22%, 30rem);
-  position: absolute;
-  top: clamp(-2rem, -5vw, -5%);
-  left: clamp(20%, 39.5vw, 90%);
-  transform: translateX(-50%);
-} */
+.submit-button:hover {
+  color:  #57e7f5;
+  background: transparent;
+  border: 0.1vw solid  #57e7f5; 
+}
 .illustration {
-  width: 20%; /* Relative to the parent div */
-  max-width: 300rem; /* Prevents excessive scaling */
-  min-width: 1rem; /* Ensures it doesn’t shrink too much */
+  width: 20%; 
+  max-width: 300rem;
+  min-width: 1rem; 
   position: absolute;
-  top: -13%; /* Keeps it consistently positioned */
-  left: 42%; /* Centers it relative to parent */
-  transform: translateX(-50%); /* Ensures centering */
+  top: -12%; 
+  left: 42%; 
+  transform: translateX(-50%); 
 }
 
 

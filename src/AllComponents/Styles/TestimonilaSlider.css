@@ -1,0 +1,134 @@
+/* Testimonial Slider Styling */
+.testimonial-section {
+    padding: 3.5rem 0;
+    background: #ffffff;
+    color: #333;
+    text-align: center;
+  }
+  
+  .testimonial-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .testimonial-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-header p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Testimonial Cards */
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .testimonial-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .testimonial-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Profile Section */
+  .testimonial-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-right: 0.75rem;
+  }
+  
+  .testimonial-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .testimonial-rating {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  
+  .star {
+    font-size: 1.2rem;
+    color: #fbbf24; /* Yellow */
+  }
+  
+  .star-inactive {
+    color: #ddd;
+  }
+  
+  /* Navigation Controls */
+  .testimonial-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .control-button {
+    background: #f3f4f6;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin: 0 0.5rem;
+  }
+  
+  .control-button:hover {
+    background: #e5e7eb;
+  }
+
+  
+.slider-box{
+    display: flex;
+    gap: 5%;
+/* grid grid-cols-1 md:grid-cols-2 gap-6 */
+}
+
+.container-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.testimonial-card-box{
+    display: flex;
+}
+
+.testimonial-card-box-img{
+    width: clamp(0.2rem,10vw,30rem);
+    border-radius: 50%;
+    height: auto;
+}
+.testimonial-card-box-info{
+    text-align: left;
+}
