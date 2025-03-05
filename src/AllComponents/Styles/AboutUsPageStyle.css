@@ -1,0 +1,107 @@
+.about-us-section{
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+.about-us-row1 {
+    position: relative;
+    text-align: center;
+    padding: clamp(0.1rem, 12vw, 60rem) clamp(0.1rem, 2vw, 70rem);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.our-story {
+    position: relative;
+    font-size: clamp(1rem, 5vw, 70rem);
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    color: white; /* Ensure visibility */
+    z-index: 1;
+}
+
+
+.about-us-row2{
+    display: flex;
+    align-items: stretch;
+    gap: 10%;
+    padding: clamp(1rem, 3%, 70rem) clamp(1rem, 6%, 70rem);
+}
+
+.about-us-row3{
+    display: flex;
+    align-items: stretch;
+    gap: 10%;
+    padding: clamp(1rem, 3%, 70rem) clamp(1rem, 6%, 70rem);
+}
+.about-us-row4{
+    display: flex;
+    align-items: stretch;
+    gap: 10%;
+    padding: clamp(1rem, 0.5%, 70rem) clamp(1rem, 6%, 70rem);
+}
+.our-culture{
+    display: flex;
+    align-items: stretch;
+    padding: clamp(0.1rem, 0.1%, 70rem) clamp(1rem, 6%, 70rem);
+}
+.about-us-row2-col-left{
+    flex: 1 1 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: clamp(1rem, 2vw, 70rem);
+    padding: 2% 0%;
+}
+.about-us-row2-col-right{
+    flex: 1 1 71%;
+    display: flex;
+    flex-direction: column;
+}
+.about-us-span-text{
+    font-size: clamp(1rem, 1.2vw, 70rem);
+    padding: 2% 0%;
+    line-height: 123%;
+  font-weight: 500;
+}
+.about-us-rows-title{
+    font-size: clamp(1rem, 3vw, 70rem);
+
+}
+.about-us-row3-col-left{
+    flex: 1 1 20%;
+}
+
+.about-us-row3-col-left img{
+    height: 100%;
+}
+.about-us-row3-col-right{
+    flex: 1 1 71%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-row4-col-left{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+.about-us-row4-col-right{
+    flex: 1 1 20%;
+}
+
+.our-story-svg,.our-story-svg1{
+    width: 100%;
+    height: auto;
+}

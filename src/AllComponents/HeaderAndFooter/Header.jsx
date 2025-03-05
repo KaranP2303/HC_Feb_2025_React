@@ -1,13 +1,14 @@
 import React from 'react';
 import '../Styles/HeaderAndFooterStyle.css';
+import { Link } from 'react-router-dom';
 
 const navLinks = [
   { name: "Learn", href: "#" },
   { name: "For Compete", href: "#" },
   { name: "For Education", href: "#" },
   { name: "For Business", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "About Us", href: "#" },
+  { name: "Pricing", href: "course-packages" },
+  { name: "About Us", href: "/about-us" },
 ];
 
 const Header = (props) => {
@@ -17,15 +18,15 @@ const Header = (props) => {
       
       <nav className="nav">
         {navLinks.map((link) => (
-          <a key={link.name} href={link.href} className="nav-link">
+          <Link key={link.name} to={link.href} className="nav-link">
             {link.name}
-          </a>
+          </Link>
         ))}
       </nav>
       
       <div className="auth-buttons">
-        <button className="login">Log In</button>
-        <button className="join">Join For Free</button>
+        <Link to={'/login'} className="login">Log In</Link>
+        <Link to={'/sign-up'} className="join">Join For Free</Link>
       </div>
     </header>
   );

@@ -1,0 +1,29 @@
+
+.hackathon-button-right-icon{
+    width: 20%;
+}
+.hackathon-button-right-button {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(40%, -55%) rotate(-90deg);
+    background-color: #57e7f5;
+    color: white;
+    padding: 1% 0%;
+    border: none;
+    border-radius: 25%;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    font-size: clamp(0.5rem,1.3vw,30rem);
+    width: clamp(0.5rem,12vw,30rem);
+    align-items: center;
+    z-index: 5;
+}
+
+
+.hackathon-button-right-button:hover{
+    background-color: rgb(94, 92, 92);
+}

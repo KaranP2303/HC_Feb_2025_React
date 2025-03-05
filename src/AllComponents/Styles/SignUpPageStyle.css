@@ -1,5 +1,6 @@
 .signup-section{
   padding: clamp(0.5rem,5%,30rem) clamp(0.5rem,17%,50rem);
+  font-family: "Poppins-Medium", sans-serif;
 }
 
 .signup-container::before {

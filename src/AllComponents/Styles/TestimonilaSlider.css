@@ -1,5 +1,6 @@
 /* Testimonial Slider Styling */
 .testimonial-section {
+  font-family: "Poppins-Regular", sans-serif;
     padding: 3.5rem 0;
     background: #ffffff;
     color: #333;
@@ -11,12 +12,7 @@
     margin: auto;
     padding: 1rem;
   }
-  
-  .testimonial-header h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
+
   
   .testimonial-header p {
     font-size: 1.1rem;
@@ -49,36 +45,30 @@
   }
   
   /* Profile Section */
-  .testimonial-profile {
+  .testimonial-card-box-name{
+    font-size: clamp(0.2rem,1.5vw,30rem);
+    margin: 0;
+
+  }
+  .testimonial-card-box-rating{
+    width: clamp(0.2rem,3%,30rem);
     display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
   }
-  
-  .testimonial-profile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    margin-right: 0.75rem;
+  .testimonial-card-box-feedback{
+    font-size: clamp(0.2rem,1.2vw,30rem);
+    padding: clamp(0.2rem,0.6vw,30rem)clamp(0.01rem,0.1vw,30rem);
+    margin: 0;
+    
   }
-  
-  .testimonial-name {
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
-  
-  .testimonial-rating {
-    display: flex;
-    margin-top: 0.5rem;
-  }
-  
   .star {
-    font-size: 1.2rem;
+    font-size: clamp(0.2rem,1.2vw,30rem);
+    padding: clamp(0.2rem,0.6vw,30rem)clamp(0.01rem,0.1vw,30rem);
     color: #fbbf24; /* Yellow */
   }
   
   .star-inactive {
+    font-size: clamp(0.2rem,1.2vw,30rem);
+    padding: clamp(0.2rem,0.6vw,30rem)clamp(0.01rem,0.1vw,30rem);
     color: #ddd;
   }
   
@@ -89,25 +79,36 @@
     margin-top: 2rem;
   }
   
-  .control-button {
-    background: #f3f4f6;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    margin: 0 0.5rem;
+  .testimonial-card-box-title{
+    font-size: clamp(0.2rem,3vw,30rem);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: transparent;
+    padding: clamp(0.2rem,4%,30rem) clamp(0.2rem,3vw,30rem) ;
+    margin: 0%;
   }
-  
-  .control-button:hover {
-    background: #e5e7eb;
-  }
+ 
 
   
 .slider-box{
     display: flex;
     gap: 5%;
 /* grid grid-cols-1 md:grid-cols-2 gap-6 */
+    padding: clamp(0.2rem,3%,30rem) clamp(0.2rem,3%,30rem) ;
+}
+
+.testimonial-card-section{
+  /* bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 transition hover:-translate-y-1 */
+  /* background: rgb(79, 78, 78); */
+  background: radial-gradient(
+    closest-side,
+    rgb(54, 54, 54) 0%,
+    rgb(44, 44, 44) 100%
+  );
+  padding: clamp(0.2rem,3%,30rem) clamp(0.2rem,3%,30rem) ;
+  border-radius: 6%;
 }
 
 .container-slider{
@@ -122,6 +123,9 @@
 
 .testimonial-card-box{
     display: flex;
+    padding: clamp(0.2rem,1%,30rem) clamp(0.2rem,1%,30rem) ;
+    justify-content: space-between;
+    gap: 4%;
 }
 
 .testimonial-card-box-img{
@@ -131,4 +135,20 @@
 }
 .testimonial-card-box-info{
     text-align: left;
+}
+
+
+
+
+.controll-buttons{
+  width: 100%;
+  padding: 3% 2%;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+}
+
+.testimonials-left-btn, .testimonials-right-btn{
+  width: clamp(0.2rem,4%,30rem);
+
 }

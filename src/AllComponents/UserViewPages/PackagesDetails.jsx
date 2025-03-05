@@ -148,7 +148,7 @@ export const PackagesDetails = () => {
         <h1 className="packages-details-title">Packages</h1>
         <p className="packages-details-subtitle">Select a package to optimize your influencer marketing experience</p>
         <div className="packages-details-toggle-container">
-          <span className="packages-details-toggle-label">Monthly</span>
+          <span className={`packages-details-toggle-label package-${!isYearly ? "selected" : ""}`}>Monthly</span>
           <label className="packages-details-toggle-switch">
             <input 
               type="checkbox" 
@@ -158,7 +158,7 @@ export const PackagesDetails = () => {
             />
             <div className="packages-details-toggle-slider"></div>
           </label>
-          <span className="toggle-label">Yearly</span>
+          <span className={`packages-details-toggle-label package-${isYearly ? "selected" : ""}`}>Yearly</span>
         </div>
       </div>
       <div className="packages-details-second-row">

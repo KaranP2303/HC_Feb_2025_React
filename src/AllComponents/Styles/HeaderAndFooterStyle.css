@@ -46,6 +46,7 @@
   background-color: transparent;
   border: 2px solid #57e7f5;
   padding: 0.5rem 1rem;
+  text-decoration: none;
   font-size: clamp(0.2rem,1vw,23rem);
   cursor: pointer;
   border-radius: 0.7rem; 
@@ -54,6 +55,7 @@
 .join {
   background: #57e7f5;
   color: black;
+  text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: none;

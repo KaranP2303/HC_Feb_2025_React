@@ -60,10 +60,10 @@
   text-align: center;
   align-self: stretch;
 
-  background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+  background: linear-gradient(to right, white 0, #13808a 10%, white 20%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 3s infinite linear;
+  animation: shine 4s infinite linear;
 }
 @keyframes shine {
   0% {

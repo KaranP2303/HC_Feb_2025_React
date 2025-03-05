@@ -3,25 +3,25 @@ import React, { useState, Fragment } from "react";
 import '../Styles/TestimonilaSlider.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faAngleLeft,
-  faAngleRight,
   faStar,
   faStarHalfAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types";
+import TestimonialRightArrow from '../Assets/TestimonialRightArrow.svg';
+import TestimonialLeftArrow from '../Assets/TestimonialLeftArrow.svg';
 
 
 const testimonials = [
   [
     {
       photo: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
-      name: "Akshay Kumar",
+      name: "Akshay Kumar 1",
       rating: 3.5,
       content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
       photo: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_3.jpeg",
-      name: "Arjun Kapur",
+      name: "Arjun Kapur 2",
       rating: 4.5,
       content: "Dicta saepe praesentium eaque nobis corrupti aut, quibusdam provident.",
     },
@@ -29,13 +29,41 @@ const testimonials = [
   [
     {
       photo: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg",
-      name: "Raima Sen",
+      name: "Raima Sen 3",
       rating: 5,
       content: "Quaerat, dicta saepe praesentium eaque nobis corrupti aut.",
     },
     {
       photo: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
-      name: "Akshay Kumar",
+      name: "Akshay Kumar 4",
+      rating: 3.5,
+      content: "Delectus magni tempore provident quibusdam provident consequatur.",
+    },
+  ],
+  [
+    {
+      photo: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg",
+      name: "Raima Sen 5",
+      rating: 5,
+      content: "Quaerat, dicta saepe praesentium eaque nobis corrupti aut.",
+    },
+    {
+      photo: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
+      name: "Akshay Kumar 6",
+      rating: 3.5,
+      content: "Delectus magni tempore provident quibusdam provident consequatur.",
+    },
+  ],
+  [
+    {
+      photo: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg",
+      name: "Raima Sen 7",
+      rating: 5,
+      content: "Quaerat, dicta saepe praesentium eaque nobis corrupti aut.",
+    },
+    {
+      photo: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
+      name: "Akshay Kumar 8",
       rating: 3.5,
       content: "Delectus magni tempore provident quibusdam provident consequatur.",
     },
@@ -44,12 +72,12 @@ const testimonials = [
 
 // Star Rating Component
 const Rating = ({ rating }) => (
-  <div className="flex">
+  <div className='testimonial-card-box-rating'>
     {[...Array(5)].map((_, i) => (
       <Fragment key={i}>
         <FontAwesomeIcon
           icon={i < Math.floor(rating) ? faStar : rating > i && rating < i + 1 ? faStarHalfAlt : faStar}
-          className={i < rating ? "text-yellow-500 text-lg" : "text-gray-300 text-lg"}
+          className={i < rating ? "star" : "star-inactive"}
         />
       </Fragment>
     ))}
@@ -62,13 +90,13 @@ Rating.propTypes = {
 
 // Testimonial Card Component
 const TestimonialCard = ({ item }) => (
-  <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 transition hover:-translate-y-1">
+  <div className="testimonial-card-section">
     <div className="testimonial-card-box">
       <img className='testimonial-card-box-img' src={item.photo} alt={item.name}  />
       <div className="testimonial-card-box-info">
-        <h5 className="">{item.name}</h5>
-        <Rating rating={item.rating} />
-        <p className="">{item.content}</p>
+        <h5 className="testimonial-card-box-name">{item.name}</h5>
+        <Rating  rating={item.rating} />
+        <p className="testimonial-card-box-feedback">{item.content}</p>
       </div>
     </div>
   </div>
@@ -93,7 +121,7 @@ export const TestimonialSlider = () => {
 
   return (
       <div className="container-slider mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Testimonials</h2>
+        <h2 className="testimonial-card-box-title">Testimonials</h2>
 
         {/* Testimonials Grid */}
         <div className=" slider-box">
@@ -103,19 +131,11 @@ export const TestimonialSlider = () => {
         </div>
 
         {/* Navigation Controls */}
-        <div className="flex justify-center items-center mt-10">
-          <button
-            className="bg-gray-100 dark:bg-gray-700 p-3 rounded-full shadow-md mx-2"
-            onClick={() => handleNavigation("prev")}
-          >
-            <FontAwesomeIcon icon={faAngleLeft} />
-          </button>
-          <button
-            className="bg-gray-100 dark:bg-gray-700 p-3 rounded-full shadow-md mx-2"
-            onClick={() => handleNavigation("next")}
-          >
-            <FontAwesomeIcon icon={faAngleRight} />
-          </button>
+        <div className="controll-buttons">
+          
+            <img src={TestimonialLeftArrow} alt="left arrow" className="testimonials-left-btn" onClick={() => handleNavigation("prev")}/>
+            <img src={TestimonialRightArrow} alt="right arrow" className="testimonials-right-btn" onClick={() => handleNavigation("next")}/>
+          
         </div>
       </div>
   );

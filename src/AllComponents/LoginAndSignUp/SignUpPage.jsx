@@ -169,6 +169,7 @@ import React, { useState } from 'react';
 import SignupPageImg from '../Assets/LoginPageImgs/LoginPageSvg.svg';
 import HcLogo from '../Assets/HC_LOGO.svg';
 import GoogleIconSvg from '../Assets/LoginPageImgs/GoogleIconSvg.svg'
+import { Link } from 'react-router-dom';
 
 export const SignUpPage = () => {
 
@@ -215,7 +216,7 @@ export const SignUpPage = () => {
 
                 {/* Sign Up Link */}
                 <p className="signup-text">
-                    Already have an account? <a href="#">Sign In</a>
+                    Already have an account? <Link to="/login">Sign In</Link>
                 </p>
             </form>
         </div>

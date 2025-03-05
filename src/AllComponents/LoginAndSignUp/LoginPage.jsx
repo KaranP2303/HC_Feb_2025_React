@@ -6,6 +6,7 @@ import LoginPageHcLogo from '../Assets/HC_LOGO.svg';
 import EmailIcon from '../Assets/LoginPageImgs/EmailIconSvg.svg';
 import PasswordLockIcon from '../Assets/LoginPageImgs/PasswordLock.svg';
 import GoogleIconSvg from '../Assets/LoginPageImgs/GoogleIconSvg.svg';
+import { Link } from "react-router-dom";
 
 export const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -68,9 +69,9 @@ export const LoginPage = () => {
           </button>
 
           {/* Forgot Password */}
-          <a href="#" className="forgot-password">
+          <Link to="/forgot-password" className="forgot-password">
             Forgot Password?
-          </a>
+          </Link>
 
           {/* Divider */}
           <div className="divider">
@@ -87,7 +88,7 @@ export const LoginPage = () => {
 
           {/* Sign Up Link */}
           <p className="signup-text">
-            Don’t have an account? <a href="#">Sign Up</a>
+            Don’t have an account? <Link to='/sign-up'>Sign Up</Link>
           </p>
         </form>
       </div>
