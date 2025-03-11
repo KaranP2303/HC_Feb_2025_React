@@ -1,0 +1,80 @@
+.user-task{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0.75rem 0.75rem 0.75rem; /* Simplified */
+    background: linear-gradient(225.89deg, #0d3033 0%, #141517 40.625%); /* Using hex for simplicity */
+    border: 0.09375rem solid transparent; /* Simplified border */
+    backdrop-filter: blur(0.3125rem);
+    padding:3% 2%;
+  }
+.user-task-title-row{
+    display: flex;
+    justify-content: space-between;
+    padding:  clamp(0.1rem,0.8vw,80rem) 0rem;
+}
+
+.user-task-title-text{
+    font-size:  clamp(0.1rem,1.2vw,80rem);
+}
+.user-tasks-buttons-controller{
+    width: 20%;
+    display: flex;
+    gap: 22%;
+}
+.user-tasks-buttons-controller-left-btn,
+.user-tasks-buttons-controller-right-btn{
+    width: clamp(0.1rem,1.2vw,80rem);
+    height: auto;
+}
+/* kjkl */
+
+
+  .user-task-program-row {
+    display: flex;
+    align-items: stretch;    
+    border: none;
+    width: 100%;
+    padding:  clamp(0.1rem,0.8vw,80rem) 0rem;
+  }
+  .user-task-program-image{
+    flex: 1 1 30%;
+    padding: 3%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .user-task-program-image img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border: clamp(0.1rem,0.1vw,80rem) solid gainsboro;
+    border-radius:0rem clamp(0.1rem,0.5vw,80rem) clamp(0.1rem,0.5vw,80rem) clamp(0.1rem,0.5vw,80rem);
+  }
+  
+  .user-task-program-details {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+
+  .user-task-program-index{
+    font-size: clamp(0.1rem,1.1vw,80rem);
+    padding: 3% 0%;
+    /* color: #7e899e; */
+  }
+
+.user-task-program-desc-text{
+    margin: 0%;
+    font-size: clamp(0.1rem,0.7vw,80rem);
+}
+
+.user-profile-task-button{
+    width: 100%;
+    background: #57e7f5;
+    padding:  clamp(0.1rem,0.5vw,80rem) clamp(0.1rem,1vw,80rem);
+    border-radius:  clamp(0.1rem,0.7vw,80rem);
+    font-size: clamp(0.1rem,1.1vw,80rem);
+    font-weight: 600;
+}

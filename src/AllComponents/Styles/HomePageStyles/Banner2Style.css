@@ -1,0 +1,81 @@
+
+.top-bar {
+  background: #1e1e1e;
+  padding: 0.3125rem 14%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+}
+
+.vector,
+.vector2 {
+    width: clamp(0.1rem,1.1vw,20rem);
+    height: auto;
+    flex-shrink: 0;
+  position: relative;
+}
+
+.vector2 {
+  width: clamp(0.1rem,1.3vw,20rem);
+
+}
+
+.support-hackerscrowd-com,
+.call-us,
+.contact-us {
+  background: linear-gradient(to left, #ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.support-hackerscrowd-com {
+  font-family: "Poppins-Regular", sans-serif;
+    font-size: clamp(0.1rem,1.1vw,20rem);
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.call-us,
+.contact-us {
+  font-family: "Poppins-Regular", sans-serif;
+    font-size: clamp(0.1rem,1.1vw,20rem);
+  font-weight: 700;
+}
+
+.frame-10 {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  flex-shrink: 0;
+}
+
+.line-1 {
+  flex-shrink: 0;
+  width: 0.625rem;
+  height: 0.3125rem;
+  position: relative;
+}
+
+@media (min-width: 1800px) and (max-width: 2560px) {
+  .top-bar{
+    padding: 0.5125rem 13%
+  }
+}
+
+@media (min-width: 2561px) {
+  
+}

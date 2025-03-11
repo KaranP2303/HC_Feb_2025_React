@@ -1,0 +1,28 @@
+
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+ 
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  
+  .main-content {
+    flex: 1;
+    padding: 15px;
+    /* background-color: #fff;   */
+    transition: margin-left 0.3s ease;
+  }
+  

@@ -1,4 +1,4 @@
-import '../Styles/AboutOurServiceStyle.css';
+import '../Styles/HomePageStyles/AboutOurServiceStyle.css';
 import React from "react";
 import { AboutOurServiceRobot } from '../Assets/DynamicSvg/AboutOurServiceRobot';
 

@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import "../Styles/LoginPageStyle.css";
+import "../Styles/LoginAndSignupStyle/LoginPageStyle.css";
 import LoginPageSvg from '../Assets/LoginPageImgs/LoginPageSvg.svg';
 import LoginPageHcLogo from '../Assets/HC_LOGO.svg';
 import EmailIcon from '../Assets/LoginPageImgs/EmailIconSvg.svg';

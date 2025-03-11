@@ -1,14 +1,14 @@
 
 .hackathon-button-right-icon{
-    width: 20%;
+    width: 15%;
 }
 .hackathon-button-right-button {
     position: fixed;
     top: 50%;
     right: 0;
-    transform: translate(40%, -55%) rotate(-90deg);
+    transform: translate(42%, -55%) rotate(-90deg);
     background-color: #57e7f5;
-    color: white;
+    color: black;
     padding: 1% 0%;
     border: none;
     border-radius: 25%;
@@ -17,10 +17,11 @@
     display: flex;
     justify-content: center;
     gap: 3%;
-    font-size: clamp(0.5rem,1.3vw,30rem);
-    width: clamp(0.5rem,12vw,30rem);
+    font-size: clamp(0.5rem,1.1vw,30rem);
+    width: clamp(0.5rem,14vw,30rem);
     align-items: center;
     z-index: 5;
+    font-family: "Poppins-Regular", sans-serif;
 }
 
 

@@ -13,6 +13,7 @@
     "axios": "^1.7.9",
     "framer-motion": "^12.4.7",
     "gsap": "^3.12.7",
+    "lucide-react": "^0.479.0",
     "mdb-react-ui-kit": "^9.0.0",
     "primereact": "^10.9.2",
     "react": "^19.0.0",

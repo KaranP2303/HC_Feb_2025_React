@@ -1,22 +1,18 @@
 import '../Styles/AboutUsPageStyle.css';
 
 import React from 'react';
-import BgVideoTrimmed from '../Assets/HeroSectionBGTrimmed.mp4';
 import OurStorySvg from '../Assets/OurStorySvg.svg';
 import OurStorySvg1 from '../Assets/OurStorySvg1.svg';
-import OurStoryBgSvg from '../Assets/OurStoryBgSvg.svg';
+import OurStoryBgVideo from '../Assets/OurStoryBgVideo.mp4';
 export const AboutUsPage = () => {
   return (
     <div className='about-us-section'>
-        {/* <div className="about-us-row1">
-            <span className='our-story'>Our Story</span>
-        </div> */}
         <div className="about-us-row1">
-            {/* <video autoPlay loop muted playsInline className="background-video">
-                <source src={BgVideoTrimmed} type="video/mp4" />
+            <video autoPlay loop muted playsInline className="background-video">
+                <source src={OurStoryBgVideo} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video> */}
-            <img src={OurStoryBgSvg} alt="" className="background-video" />
+            </video>
+            {/* <img src={OurStoryBgSvg} alt="" className="background-video" /> */}
             <span className="our-story">Our Story</span>
         </div>
 

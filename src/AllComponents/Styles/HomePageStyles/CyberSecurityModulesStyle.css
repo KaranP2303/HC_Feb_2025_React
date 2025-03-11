@@ -1,0 +1,111 @@
+.cyber-container { 
+    margin: auto;
+    padding: 1.25rem 8%;
+    font-family: "Poppins-Regular", sans-serif;
+  }
+  
+  .cyber-title {
+    text-align: center;
+    font-size: clamp(0.5rem, 3vw, 25rem);
+    font-weight: 600;
+    margin: 0rem;
+    padding: clamp(0.5rem, 3vw, 25rem) clamp(0.5rem, 3vw, 25rem);
+  }
+  
+  .cyber-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  
+  .cyber-topic {
+    border: 1px solid #343434;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cyber-topic-btn {
+    width: 100%;
+    font-size: clamp(0.1rem, 1.5vw, 25rem);
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(0.1rem, 1vw, 25rem) clamp(0.1rem, 1vw, 25rem);
+    background: transparent;
+  }
+  
+  .cyber-left {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+    9deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .cyber-index {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .cyber-arrow {
+    transition: transform 0.3s ease;
+    background: linear-gradient(
+    9deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .cyber-arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .cyber-dropdown {
+    padding: 0.5rem 1rem;
+  }
+  
+  .cyber-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 2%;
+    padding: 1% 2%;
+  }
+  
+  .cyber-box {
+    height: 7.5rem;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: rgb(72, 72, 72);
+  }
+  
+  .cyber-box-text {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.25rem;
+    font-size: clamp(0.1rem, 1vw, 25rem);
+  }
+
+  .cyber-description{
+    margin: 0%;
+    font-size: clamp(0.1rem, 1.2vw, 25rem);
+  }

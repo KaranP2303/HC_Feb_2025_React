@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import "../Styles/CyberSecurityModulesStyle.css";
+import "../Styles/HomePageStyles/CyberSecurityModulesStyle.css";
 import RightSideArrowSvg from '../Assets/rightSideArrowSvg.svg';
 import RightSideUpArrowSvg from '../Assets/RightSideUpArrowSvvg.svg';
 // import { img } from "framer-motion/client";

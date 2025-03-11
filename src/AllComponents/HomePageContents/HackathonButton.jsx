@@ -6,7 +6,7 @@ export const HackathonButton = () => {
   return (
         <button className="hackathon-button-right-button">
             <img className="hackathon-button-right-icon" src={HackathoneIcon} alt="" />
-            Click Me
+            Request a demo
         </button>
   )
 }

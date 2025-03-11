@@ -1,0 +1,328 @@
+.user-profile-page{
+    padding: clamp(0.1rem, 1vw,30rem) clamp(0.1rem, 2vw,30rem);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-profile-section-row-1{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5%;
+    font-family: "Poppins-Medium", sans-serif;
+    padding: 0% 0% 3% 0%;
+  
+}
+.user-profile-section-row-2{
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 5%;
+  font-family: "Poppins-Medium", sans-serif;
+  padding: 2% 0% 2% 0%;
+
+}
+.user-profile-section-row-1{
+    border-bottom: clamp(0.01rem,0.15vw,40rem) solid #656565;
+    border-image: linear-gradient(to right, rgba(101, 101, 101, 0) 0%, #656565 50%, #656565 100%);
+    border-image-slice: 1;
+
+}
+
+.user-profile-section-row-1-badge-col{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 60%;
+}
+.user-profile-section-row-1-user-data-col{
+    display: flex;
+    flex: 1 1 30%;
+    align-items: end;
+    gap: 5%;
+    padding: 2% 0%;
+}
+.user-profile-section-row-1-badge-col-badges-group{
+    display: flex;
+    gap: 3%;
+}
+.badge-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.badge-icon{
+    width: clamp(0.1rem,6vw,90rem);
+    height: auto;
+}
+.badges-earned-title{
+    font-size:  clamp(0.1rem,1.7vw,40rem);
+    padding: 2% 0% 3% 0%;
+    font-weight: 500;
+}
+.badge-label{
+    font-size:  clamp(0.1rem,1.2vw,40rem);
+    font-weight: 500; 
+}
+
+.user-profile-section-row-1-user-data-col-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1vw;
+}
+.user-profile-username-text{
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    font-weight: 500;
+    font-size: clamp(0.1rem,1.6vw,40rem);
+}
+.waving-hand-svg{
+    width:  clamp(0.1rem,2vw,40rem);
+}
+.user-profile-username-text-description{
+    margin: 0;
+    font-size: clamp(0.1rem,0.9vw,40rem);
+    color:  #818181;
+}
+
+.user-profile-pic {
+    width: clamp(0.1rem,9.5vw,40rem); /* Adjust as needed */
+    height:  clamp(0.1rem,9vw,40rem); /* Ensure width and height are equal */
+    border-radius: 50%; /* Makes the div a circle */
+    overflow: hidden; /* Ensures image does not exceed bounds */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .user-profile-pic img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; 
+  }
+  
+.user-profile-section-row-2-stats-col{
+    flex: 1 1 60%;
+    display: flex;
+    align-items: stretch;
+    gap: 3%;
+}
+
+.user-profile-section-row-2-task-col{
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.my-progress-col {
+    flex: 1 1 45%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0.75rem 0.75rem 0.75rem; /* Simplified */
+    background: linear-gradient(225.89deg, #0d3033 0%, #141517 40.625%); /* Using hex for simplicity */
+    border: 0.09375rem solid transparent; /* Simplified border */
+    backdrop-filter: blur(0.3125rem);
+    padding:3% 2%;
+  }
+
+  .my-progress-title,.active-program-title {
+    font-size: clamp(0.1rem,1.5vw,80rem);
+    font-weight: bold;
+  }
+  
+  .progress-container {
+    position: relative;
+    width: 100%;
+    padding: 4% 0%;
+  }
+
+  .progress-percentage{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0%;
+  }
+ 
+  .progress-label{
+    font-size: clamp(0.1rem,1.3vw,50rem);
+  }
+  .pending-progress-label{
+    font-size: clamp(0.1rem,0.9vw,50rem);
+    margin: 0;
+  }
+  
+  .progress-bar {
+    height: clamp(0.1rem,1.5vw,50rem);
+    background-color: #333; /* Dark background for the bar */
+    border-radius: clamp(0.1rem,0.5vw,50rem);
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color:  #ffc049; /* Progress color */
+    border-radius: clamp(0.1rem,0.5vw,50rem);
+  }
+  
+  .pending-percentage {
+    color: #ccc;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  
+  .box-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem; /* Space between boxes */
+    align-items: stretch;
+    padding: 2% 0%;
+  }
+  
+  .box {
+    flex: 1 1 50%; 
+    flex-direction: column;
+    gap: 5%;
+    background: linear-gradient(
+        90.56deg,
+        rgba(255, 250, 242, 1) 0%,
+        rgba(243, 236, 255, 1) 100%
+      ); 
+    border-radius: clamp(0.1rem,1.5vw,50rem)clamp(0.1rem,0.5vw,50rem)
+                    clamp(0.1rem,0.5vw,50rem)clamp(0.1rem,0.5vw,50rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 1%;
+  }
+
+  .box-icon-row{
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .learner-champ{
+    color: #ff9950;
+    margin: 0;
+  }
+  .user-total-score,.user-score-number{
+    color:#8a50fc;
+    margin: 0;
+  }
+
+  
+
+  .user-rating-number,.user-rating-label{
+    color: #53d5f9;
+    margin: 0;
+  }
+  .user-programs-label,.user-programs-number{
+    color: #f64e60;
+    margin: 0;
+  }
+
+  .user-score-number,.user-rating-number,.user-programs-number{
+    font-size: clamp(0.1rem,2vw,80rem);
+    font-weight: 600;
+  }
+
+  .user-profile-box-label{
+    font-size: clamp(0.1rem,1vw,80rem);
+    padding: 5% 0% ;
+    font-weight: 500;
+    
+  }
+
+  .user-profile-box-icon{
+    width:clamp(0.1rem,3vw,80rem) ;
+    
+  }
+
+  .active-program-col {
+    flex: 1 1 45%;
+    padding:3% 2%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0.75rem 0.75rem 0.75rem; /* Simplified */
+    background: linear-gradient(225.89deg, #0d3033 0%, #141517 40.625%); /* Using hex for simplicity */
+    border: 0.09375rem solid transparent; 
+    backdrop-filter: blur(0.3125rem);
+  }
+
+  .program-list {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(0.1rem,1vw,80rem) 0rem;
+  }
+
+  .program-row {
+    display: flex;
+    align-items: stretch;    
+    border: none;
+    width: 100%;
+  }
+  .program-image{
+    flex: 1 1 30%;
+    padding: 3%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .program-image img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border: clamp(0.1rem,0.1vw,80rem) solid gainsboro;
+    border-radius:0rem clamp(0.1rem,0.5vw,80rem) clamp(0.1rem,0.5vw,80rem) clamp(0.1rem,0.5vw,80rem);
+  }
+  
+  .program-details {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .program-progress {
+    display: flex;
+    align-items: center;
+  }
+  
+  .active-program-progress-bar {
+    width: 100%;
+    height: auto;
+    background: #eee;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .active-program-progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+  }
+  .program-number{
+    font-size: clamp(0.1rem,1vw,80rem);
+    padding: 3% 0%;
+    color: #7e899e;
+  }
+  .progress-text {
+    font-size: 12px;
+    z-index: 1;
+  }
+

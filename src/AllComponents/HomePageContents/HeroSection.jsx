@@ -1,4 +1,4 @@
-import '../Styles/HeroSectionStyle.css';
+import '../Styles/HomePageStyles/HeroSectionStyle.css';
 import BgVideoTrimmed from '../Assets/HeroSectionBGTrimmed.mp4';
 import React from "react";
 

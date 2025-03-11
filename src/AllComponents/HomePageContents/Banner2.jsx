@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Banner2Style.css';
+import '../Styles/HomePageStyles/Banner2Style.css';
 import EmailSvg from '../Assets/EmailSvg.svg';
 import CallUsSvg from '../Assets/CallUsSvg.svg';
 

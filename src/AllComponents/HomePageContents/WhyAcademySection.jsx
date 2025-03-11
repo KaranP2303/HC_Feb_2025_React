@@ -1,5 +1,5 @@
 
-import '../Styles/WhyAcademySectionStyle.css';
+import '../Styles/HomePageStyles/WhyAcademySectionStyle.css';
 import GuidedCourseIcon from '../Assets/GuidedCoursesSvg.svg';
 import PenTestingIcon from '../Assets/PenTestingSvg.svg';
 import HighlyPracticleIcon from '../Assets/HighlyPracticleSvg.svg';

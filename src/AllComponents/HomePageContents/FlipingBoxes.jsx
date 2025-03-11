@@ -1,4 +1,4 @@
-import '../Styles/FlippingBoxesStyle.css';
+import '../Styles/HomePageStyles/FlippingBoxesStyle.css';
 import { useState } from "react";
 import GuidedCourseIcon from '../Assets/GuidedCoursesSvg.svg';
 import PenTestingIcon from '../Assets/PenTestingSvg.svg';

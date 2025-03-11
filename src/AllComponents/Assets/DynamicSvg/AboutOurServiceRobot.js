@@ -87,14 +87,7 @@ export const AboutOurServiceRobot = ( data ) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    {/* <path
-      d="M604.5 408.5L527.672 315C451.062 315 421.61 315 345 315"
-      stroke="#57E7F5"
-    /> */}
-     {/* <AnimatedPath cx={343.5} cy={64} pathData="M563.5 93L502.381 64C427.837 64 418.544 64 344 64" />
-      <AnimatedPath cx={1046.5} cy={64} pathData="M827.5 93L888.619 64H1046.5" />
-      <AnimatedPath cx={343.5} cy={315} pathData="M604.5 408.5L527.672 315C451.062 315 421.61 315 345 315" />
-      <AnimatedPath cx={1050.5} cy={315} pathData="M800.5 403L874.328 315H1050" /> */}
+    
       <AnimatedPath cx={343.5} cy={64} pathData="M563.5 93L502.381 64C427.837 64 418.544 64 344 64" />
       <AnimatedPath cx={1046.5} cy={64} pathData="M827.5 93L888.619 64H1046.5" />
       <AnimatedPath cx={343.5} cy={315} pathData="M604.5 408.5L527.672 315C451.062 315 421.61 315 345 315" />

@@ -1,4 +1,4 @@
-import "../Styles/WhyHcAcademyStyle.css";
+import "../Styles/HomePageStyles/WhyHcAcademyStyle.css";
 import { WhyAcademySection } from "./WhyAcademySection";
 
 export const WhyHCAcademy = () => {

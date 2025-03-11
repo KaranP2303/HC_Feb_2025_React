@@ -1,4 +1,4 @@
-import '../Styles/ContactFormStyle.css';
+import '../Styles/HomePageStyles/ContactFormStyle.css';
 import React from "react";
 import ContactUsRobotSvg from '../Assets/ContactUsRobotSvg.svg'
 

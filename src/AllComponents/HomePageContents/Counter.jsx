@@ -1,4 +1,4 @@
-import '../Styles/CounterStyle.css';
+import '../Styles/HomePageStyles/CounterStyle.css';
 
 import React from "react";
 
