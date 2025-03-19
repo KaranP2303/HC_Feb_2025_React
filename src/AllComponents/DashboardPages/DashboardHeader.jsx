@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/DashboardStyle/DashboardHeader.css';
 import Hc_Logo from '../Assets/HC_LOGO.svg';
-import { Search, Bell, Sun, Info } from "lucide-react";
+import { Search, Bell, Sun } from "lucide-react";
 import ProfileImg from '../Assets/ProfileImg.jpg';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +27,6 @@ export const DashboardHeader = () => {
         <div className="icon-group">
           <Bell className="icon"  />
           <Sun className="icon"  />
-          <Info className="icon"  />
           <div className="dashboard-header-profile-menu">
             <img src={ProfileImg} className='search-container-profile cursor-pointer' alt=""
               onClick={() => setShowProfileMenu(!showProfileMenu)} />

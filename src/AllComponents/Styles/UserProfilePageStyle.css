@@ -125,7 +125,7 @@
     gap: 1vw;
 }
 .my-progress-col {
-    flex: 1 1 45%;
+    flex: 1 1 40%;
     position: relative;
     overflow: hidden;
     border-radius: 0 0.75rem 0.75rem 0.75rem; /* Simplified */
@@ -248,7 +248,7 @@
   }
 
   .active-program-col {
-    flex: 1 1 45%;
+    flex: 1 1 60%;
     padding:3% 2%;
     position: relative;
     overflow: hidden;

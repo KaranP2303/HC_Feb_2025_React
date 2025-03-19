@@ -10,6 +10,7 @@ import UserProgram from '../Assets/UserProfileImg/UserProgramsSvg.svg';
 import UserScore from '../Assets/UserProfileImg/UserScoreSvg.svg';
 import programImg from '../Assets/UserProfileImg/ProgramImg.jpg';
 import { UserTasksComponent } from './UserTasksComponent';
+import { DashboardHexagonChart } from '../ChartsAndGraphs/DashboardHexagonChart';
 
 export const UserProfilePage = () => {
   const programs = [
@@ -99,32 +100,7 @@ export const UserProfilePage = () => {
             </div>
           </div>
           <div className="active-program-col">
-            <span className="active-program-title">Active Program</span>
-            <div className="program-list">
-              {programs.map((program, index) => (
-                <div key={index} className="program-row">
-                  <div className="program-image">
-                    <img src={program.image} alt={`Program ${program.number}`} />
-                  </div>
-                  <div className="program-details">
-                    <div className="program-number">{`Program ${program.number}`}</div>
-                    <div className="program-progress">
-                      <div className="active-program-progress-bar">
-                        <div
-                          className="active-program-progress-fill"
-                          style={{
-                            width: `${program.progress}%`,
-                            backgroundColor: program.progress === 100 ? "green" : "#ffc049",
-                          }}
-                        >
-                          <span className="progress-text">{`${program.progress}%`}</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <DashboardHexagonChart/>
           </div>
         </div> 
         <div className="user-profile-section-row-2-task-col">

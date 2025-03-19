@@ -1,0 +1,104 @@
+/* Container Styling */
+.training-module-container { 
+    font-family: "Poppins-Medium", sans-serif;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 2% 3%;
+  }
+  
+  /* Page Title */
+  .training-module-page-title {
+    text-align: left;
+    font-size: clamp(0.1rem,2.5vw,80rem);
+    font-weight: 500;
+    margin-bottom: 2%;
+  }
+  
+  /* Grid Layout */
+  .training-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    justify-content: center;
+  }
+  
+  /* Training Card */
+  .training-card {
+    background: transparent;
+    border-radius: clamp(0.01rem,0.3vw,20rem);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 15%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .training-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image */
+  .training-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Course Name */
+  .course-name {
+    font-size: clamp(0.1rem,1vw,20rem);
+    font-weight: bold;
+    padding: 2% 0;
+    text-align: left;
+    margin: 0%;
+  }
+  
+  /* Studio & Rating Row */
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0%;
+    font-size: clamp(0.1rem,1.1vw,20rem);
+    color: #555;
+  }
+  
+  /* Rating Styling */
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating-count {
+    font-size: clamp(0.1rem,1vw,20rem);
+    color: #777;
+  }
+  
+  /* Pricing Row */
+  .pricing-row {
+    display: flex;
+    /* justify-content: left; */
+    padding: 1% 0%;
+    align-items: center;
+  }
+  .studio-name{
+        color: #3dcbb1;
+    }
+  .rating-count{
+    color: white;
+  }
+  /* Discounted Price */
+  .discounted-price {
+    font-size: clamp(0.1rem,1.5vw,50rem);
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Initial Price */
+  .initial-price {
+    font-size: clamp(0.1rem,1.1vw,20rem);
+    text-decoration: line-through;
+    color: #777;
+    padding: 2% 4% 0% 4%;
+  }
+  

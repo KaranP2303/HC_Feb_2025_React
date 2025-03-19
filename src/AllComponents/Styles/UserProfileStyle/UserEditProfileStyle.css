@@ -1,0 +1,135 @@
+.edit-user-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:clamp(0.01rem , 1vw ,30rem)clamp(0.01rem , 1vw ,30rem) ;
+    width: 80%;
+    justify-self: anchor-center;
+}
+
+.edit-user-title-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-edit-change-avatar{
+    background: transparent;
+    border: none;
+    color:  #57e7f5;
+    font-size: clamp(0.01rem , 1.2vw ,30rem);
+}
+
+.user-edit-form-section{
+    width: 80%;
+}
+.user-edit-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-edit-input-box{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    gap: 0.7%;
+}
+
+.user-edit-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 98.7%;
+    border: clamp(0.01rem , 0.15vw ,30rem) solid grey;
+    border-radius: clamp(0.01rem , 0.45vw ,30rem);
+    padding: 0rem clamp(0.1rem , 0.5vw ,30rem);
+    background: transparent;
+    margin:0.6% 0%;
+}
+
+.user-edit-icon {
+    color: grey;
+}
+
+.user-edit-input-field{
+    flex: 1;
+    width: 97.6%;
+    padding: clamp(0.1rem , 0.5vw ,30rem);
+    margin: clamp(0.1rem , 0.5vw ,30rem);
+    background: transparent !important;
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.user-edit-input-field:-webkit-autofill,
+.user-edit-input-field:-webkit-autofill:hover, 
+.user-edit-input-field:-webkit-autofill:focus, 
+.user-edit-input-field:-webkit-autofill:active {
+    background: transparent !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    color: inherit !important;
+}
+.user-edit-form-button{
+    width: 100%;
+    border: clamp(0.01rem , 0.15vw ,30rem) solid white;
+    border-radius: clamp(0.01rem , 0.45vw ,30rem);
+    padding: clamp(0.1rem , 0.5vw ,30rem);
+    background: #57e7f5;
+    margin-top: clamp(0.1rem , 0.5vw ,30rem);
+    font-size: clamp(0.01rem , 1.5vw ,30rem);
+    font-weight: 500;
+}
+
+
+
+
+
+.user-edit-input-field:not(:placeholder-shown) {
+    background: transparent !important;
+    font-size: clamp(0.1rem,1.2vw,30rem);
+  }
+
+  
+  
+  /* Input Icons *//* Base styles */
+.user-edit-input-field {
+  background: transparent !important;
+  color: white !important;
+  caret-color: white;
+  font-size: clamp(0.1rem,1.2vw,30rem);
+}
+
+/* Ensure placeholder is visible */
+.user-edit-input-field::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important; /* Adjust opacity for better visibility */
+  font-size: clamp(0.1rem,1.2vw,30rem);
+}
+
+/* Autofill fix for WebKit browsers (Chrome, Edge, Safari) */
+.user-edit-input-field:-webkit-autofill {
+  background: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px black inset !important; /* Forces transparent background */
+  color: white !important; /* Ensures autofilled text is visible */
+  -webkit-text-fill-color: white !important; /* Ensures autofill text color */
+  font-size: clamp(0.1rem,1.2vw,30rem);
+}
+
+/* Autofill on focus */
+.user-edit-input-field:-webkit-autofill:focus {
+  background: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px black inset !important;
+  -webkit-text-fill-color: white !important;
+  font-size: clamp(0.1rem,1.2vw,30rem);
+}
+
+/* Autofill fix for Firefox */
+.user-edit-input-field:-moz-autofill {
+  background: transparent !important;
+  color: white !important;
+}

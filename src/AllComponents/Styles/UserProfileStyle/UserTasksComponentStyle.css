@@ -78,3 +78,10 @@
     font-size: clamp(0.1rem,1.1vw,80rem);
     font-weight: 600;
 }
+
+.user-profile-task-button:hover{
+  color: #57e7f5;
+  background: transparent;
+  border: clamp(0.01rem,0.1vw,80rem) solid #57e7f5;
+  cursor: pointer;
+}

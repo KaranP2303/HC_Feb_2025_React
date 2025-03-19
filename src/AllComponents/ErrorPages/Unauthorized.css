@@ -1,0 +1,50 @@
+/* Unauthorized Page Styling */
+.unauthorized-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+  }
+  
+  .unauthorized-content {
+    background: #2c2c2c;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .warning-icon {
+    font-size: 60px;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+  }
+  
+  .unauthorized-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .unauthorized-text {
+    color: #b3b3b3;
+    margin-bottom: 20px;
+  }
+  
+  .unauthorized-button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .unauthorized-button:hover {
+    background: #e60000;
+  }
+  

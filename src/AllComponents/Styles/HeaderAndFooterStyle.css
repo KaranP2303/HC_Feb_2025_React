@@ -52,7 +52,30 @@
   cursor: pointer;
   border-radius: 0.7rem; 
 }
-
+.logout-icon {
+  width: clamp(0.2rem,1.9vw,23rem);
+  height: auto;
+}
+.logout {
+  color: white;
+  /* background: radial-gradient(circle, red, #57e7f5); */
+  background: linear-gradient(45deg, rgb(215, 84, 84), #57e7f5);
+  font-weight: bold;
+  border: 2px solid #57e7f5;
+  padding: 5% 10% ;
+  text-decoration: none;
+  font-size: clamp(0.2rem,1.1vw,23rem);
+  border-radius: 0.7rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  white-space: nowrap;
+}
+.logout:hover {
+  color: #57e7f5;
+  background:transparent; 
+}
 .join {
   background: #57e7f5;
   color: black;
