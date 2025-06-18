@@ -10,21 +10,13 @@
     position: relative;
     min-height: clamp(1rem,40VW,500rem);
     width: 65%;
-    /* background: #57e7f5; */
-    /* background: linear-gradient(to bottom, #57e7f5, white); */
     background: radial-gradient(circle, #57e7f5, white);
-    /* background: linear-gradient(to bottom right, #57e7f5, white); */
 
     border-radius: clamp(1rem,2.2vw,50rem);
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
     overflow: hidden;
 }
 
-
-
-/* form {
-    width: 100%;
-} */
 
 .sign-in-form-box{
     position: absolute;
@@ -84,21 +76,6 @@
     border: clamp(0.16px,0.15vw,480px) solid black;
     color: black;
   }
-/* .form-box {
-    position: absolute;
-    right: 0;
-    width: 40%;
-    height: -webkit-fill-available;
-    height: 100%;
-    background: #57e7f5;
-    display: flex;
-    align-items: center;
-    color: black;
-    text-align: center;
-    padding: 40px;
-    z-index: 1;
-    transition: .6s ease-in-out 1.2s, visibility 0s 1s;
-} */
 .sample-login-form{
     gap: 2%;
     width: 100%;
@@ -134,7 +111,6 @@
     left: -250%;
     width: 300%;
     height: 100%;
-    /* background: black; */
     background: linear-gradient(
         225.89deg,
         rgba(13, 48, 51, 1) 0%,
